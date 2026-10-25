@@ -1,4 +1,4 @@
-# English edition
+﻿# English edition
 
 ## Translation policy
 
