@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "language": "en",
+  "conversations": [
+    {
+      "id": 0,
+      "name": "White-haired old man",
+      "age": "elder",
+      "gender": "male",
+      "pose": "sitting",
+      "theme": "Listening for footsteps",
+      "pages": [
+        "When you sit here, the footsteps reach you first.\nI could hear you a little while before you arrived.",
+        "Even people in a hurry take smaller steps here.\nPerhaps it is the long bridges. Perhaps it is what is on their minds.",
+        "Thank you for talking to me.\nNext time, I might know it is you just by your footsteps."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Thin woman",
+      "age": "adult",
+      "gender": "female",
+      "pose": "walking",
+      "theme": "Small steps",
+      "pages": [
+        "You can go ahead of me.\nThese are the biggest steps I can manage right now.",
+        "When I look into the distance, my heart gets tired before my legs do.\nSo I take the stones at my feet one at a time.",
+        "I have made it one stone farther than before.\n...I think I will call that enough."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Motionless young man",
+      "age": "adult",
+      "gender": "male",
+      "pose": "standing",
+      "theme": "Time spent not choosing",
+      "pages": [
+        "I stopped because I was going to turn right.\nThen I started thinking left might be just as good.",
+        "I suppose it is less about which way is right,\nand more about not wanting to regret my choice.",
+        "You go on ahead.\nIf I follow someone, I will only get out of choosing for myself again."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Downcast old woman",
+      "age": "elder",
+      "gender": "female",
+      "pose": "sitting",
+      "theme": "A place to wait",
+      "pages": [
+        "From here, I can see the faces of people passing by.\nStanding up to wait has become too much for me.",
+        "I do not know whom I am waiting for.\nBut I cannot say for certain that it is not you.",
+        "If you happen to come this way again...\nWould you please not introduce yourself as a stranger?"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Little girl",
+      "age": "child",
+      "gender": "female",
+      "pose": "sitting",
+      "theme": "A map in the stone",
+      "pages": [
+        "Look, this crack is like a river.\nYou can see it if you crouch down. There, the narrow bit.",
+        "This is a house, and this is a bridge.\nIt is not a real map, so it is all right if you get lost.",
+        "Can I make a place for you too?\nOn this side, where you do not have to cross the river."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Boy with his head down",
+      "age": "child",
+      "gender": "male",
+      "pose": "walking",
+      "theme": "Counting again",
+      "pages": [
+        "One, two, three...\nOh. When you spoke to me, I forgot where I was.",
+        "You do not have to say sorry. I was only counting my steps.\nIt is not as if I get anything when I finish.",
+        "Maybe I will start from ten next time.\nIt is cheating, but a little bit should be all right."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tired man",
+      "age": "adult",
+      "gender": "male",
+      "pose": "walking",
+      "theme": "After coming down the tower",
+      "pages": [
+        "I thought I might see the edge if I went up high enough.\nEven after I came down the stairs, my legs still felt as if they were climbing.",
+        "What I saw was another tower, and another beyond it.\nI could see more of the world. I did not find any more answers.",
+        "I do not feel like going anywhere high just now.\nLet me walk on level ground for a little while."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Pensive woman",
+      "age": "adult",
+      "gender": "female",
+      "pose": "standing",
+      "theme": "The silence after a voice",
+      "pages": [
+        "Could you stay there a moment?\nI am listening to the silence just after someone has spoken.",
+        "It is different from the silence when you are alone, is it not?\n...It sounds a little different to me.",
+        "That is enough now.\nI will remember the place where your voice was a little longer."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Man watching the grass",
+      "age": "adult",
+      "gender": "male",
+      "pose": "sitting",
+      "theme": "An unnoticed change",
+      "pages": [
+        "From down here, you can see the gaps between the stones.\nThey look empty, but sometimes a thin blade of grass is still there.",
+        "I cannot tell whether it has grown.\nWatch for long enough, and you forget what it looked like before.",
+        "Even standing up to check feels like too much trouble.\nFor today, finding it will have to do."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Old man waiting for the lights",
+      "age": "elder",
+      "gender": "male",
+      "pose": "standing",
+      "theme": "The order of the lanterns",
+      "pages": [
+        "The lights do not all come on at once in the evening, do they?\nI stand here and watch to see which will be first.",
+        "Remembering yesterday's order never helps me guess.\nIt is as if someone thinks it over afresh every time.",
+        "Just waiting turns into a guessing game.\nIt wears out my legs, but it is not a bad way to pass the time."
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Woman with slumped shoulders",
+      "age": "adult",
+      "gender": "female",
+      "pose": "walking",
+      "theme": "Starting with the other foot",
+      "pages": [
+        "Today, I tried starting with my left foot.\nNot that I expect it to change anything.",
+        "I have grown a little tired of doing the same things.\nI still do not have the energy for a big change.",
+        "Oh, which foot was that just now?\nEven something so small gives me more to think about."
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Old woman hugging her knees",
+      "age": "elder",
+      "gender": "female",
+      "pose": "sitting",
+      "theme": "What the hands remember",
+      "pages": [
+        "Sometimes, when I rest my hands on my knees, my fingers move.\nAs if I were sewing something. Though I have no needle.",
+        "Was I mending someone's clothes?\nThe more I think about it, the more my fingers fall still.",
+        "I have decided not to tell myself to remember.\nI will keep whatever my hands still know."
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Boy waiting for the moon",
+      "age": "child",
+      "gender": "male",
+      "pose": "standing",
+      "theme": "A question for the moon",
+      "pages": [
+        "How does the moon come back after it sets over there?\nIs there a bridge underneath too?",
+        "I thought I would find out if I watched, so I stood here all this time.\nBut once it was out of sight, it just stayed out of sight.",
+        "...Even looking up has made me tired.\nWill you tell me when it comes out again?"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Old man with a limp",
+      "age": "elder",
+      "gender": "male",
+      "pose": "walking",
+      "theme": "The courage to turn back",
+      "pages": [
+        "I hated going back the way I had come. It felt like losing.\nSo I took some very long ways round.",
+        "Now, if I want to go back, I turn around.\nMaking a road into something to win or lose only tires your feet.",
+        "The trouble is, once I turn around, I forget\nwhich way I wanted to go a moment ago."
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Woman resting her hands on her knees",
+      "age": "adult",
+      "gender": "female",
+      "pose": "sitting",
+      "theme": "Choosing a place to stay",
+      "pages": [
+        "Just looking for somewhere to sit wore me out.\nIn the end, I sat down where I had first stopped.",
+        "I am sure there are better places.\nBut surely I am allowed a reason to stay here too.",
+        "The space beside me is free.\nYou can decide for yourself whether it feels like somewhere to settle."
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Man making way",
+      "age": "adult",
+      "gender": "male",
+      "pose": "standing",
+      "theme": "Something useful to do",
+      "pages": [
+        "Can you get through?\nStand around daydreaming, and you end up blocking someone else's path.",
+        "I do not know the roads well enough to give directions.\nAnd I cannot carry your bags. You have none either.",
+        "At least I can try not to keep you too long.\nTake care. ...Yes, that much I can say for now."
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Girl trudging along",
+      "age": "child",
+      "gender": "female",
+      "pose": "walking",
+      "theme": "A pace of her own",
+      "pages": [
+        "When someone asks me to walk with them,\nI start thinking I have to walk faster.",
+        "Maybe they would be happy to wait for me.\nBut making someone wait is tiring too.",
+        "You can go ahead.\nPlease do not be angry if I never catch up."
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Man resting his arms on his knees",
+      "age": "adult",
+      "gender": "male",
+      "pose": "sitting",
+      "theme": "A little joke",
+      "pages": [
+        "I was thinking of opening an inn here.\nNo chairs or beds, but the view is excellent.",
+        "The price of a room is one good story.\n...No need to look so troubled. I am joking.",
+        "With an innkeeper like this, it will never open.\nI sat down before I even put up the sign."
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Old woman with narrowed eyes",
+      "age": "elder",
+      "gender": "female",
+      "pose": "standing",
+      "theme": "Today's discovery",
+      "pages": [
+        "Have you seen anything unusual today?\nI have been standing here for quite some time.",
+        "It need not be a great discovery.\nA chipped stone, perhaps, or a strangely shaped blade of grass.",
+        "I can listen to stories like that.\nI have already heard so many times that there is no way out."
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Slow-walking woman",
+      "age": "adult",
+      "gender": "female",
+      "pose": "walking",
+      "theme": "Carrying a conversation onward",
+      "pages": [
+        "My feet stop when someone speaks to me.\nI thought I was still walking.",
+        "I wanted to say something to the last person I met,\nbut the words only came after we parted. I am always too late.",
+        "I might think of an answer for you later too.\nIf we meet again, will you hear the rest?"
+      ]
+    }
+  ]
+}

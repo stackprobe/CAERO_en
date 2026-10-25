@@ -27,7 +27,7 @@ internal static class Dialogue
     public static readonly Speech[] Lines = Load(FilePath);
     public static readonly string FontCharacters = string.Concat(Lines.Select(s => s.Name + string.Concat(s.Pages)
         + (s.Choice is { } choice ? string.Concat(choice.AllPages) : "")))
-        + "話しかける次へ閉じる全文表示白い衣の人々声はかすれ言葉が途切れる……［］　……気がつくと、最初の島に戻っていた。はいいえ選択決定矢印←→";
+        + "";
 
     internal static Speech[] Load(string path)
     {

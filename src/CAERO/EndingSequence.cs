@@ -2,7 +2,7 @@ namespace Caero;
 
 internal sealed class EndingSequence
 {
-    internal const string Message = "あなたは、脱出した。";
+    internal const string Message = "You escaped.";
     internal const float WhiteDuration = 2, TextStart = 2.4f, TextDuration = 1.4f;
     internal const float ImageStart = 5, ImageDuration = 3, ButtonDelay = 3;
     internal float Elapsed { get; private set; }

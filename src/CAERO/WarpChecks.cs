@@ -10,14 +10,14 @@ internal static class WarpChecks
     internal static void Run()
     {
         foreach (var (dx, dz, destination) in new[] {
-            (0, -1, "北へ 15 島"), (1, -1, "北へ 15 島 東へ 15 島"),
-            (1, 0, "東へ 15 島"), (1, 1, "南へ 15 島 東へ 15 島"),
-            (0, 1, "南へ 15 島"), (-1, 1, "南へ 15 島 西へ 15 島"),
-            (-1, 0, "西へ 15 島"), (-1, -1, "北へ 15 島 西へ 15 島") })
+            (0, -1, "15 islands north"), (1, -1, "15 islands north and 15 islands east"),
+            (1, 0, "15 islands east"), (1, 1, "15 islands south and 15 islands east"),
+            (0, 1, "15 islands south"), (-1, 1, "15 islands south and 15 islands west"),
+            (-1, 0, "15 islands west"), (-1, -1, "15 islands north and 15 islands west") })
             Check(new WarpTerminal(dx, dz, 15, default, default).ConfirmationMessage
-                == $"ワープしますか？　ワープ先は {destination} です。", "eight-direction confirmation text");
+                == $"Warp to a destination {destination} away?", "eight-direction confirmation text");
         Check(new WarpTerminal(0, -1, 55, default, default).ConfirmationMessage
-            == "ワープしますか？　ワープ先は 北へ 55 島 です。", "north confirmation text");
+            == "Warp to a destination 55 islands north away?", "north confirmation text");
         var rotations = new HashSet<int>(); bool roof = false, inside = false;
         var stairSides = new HashSet<int>();
         foreach (int seed in new[] { 1701, 48291, -31, 1, 2, 3, 4, 5 })

@@ -31,11 +31,11 @@ internal static class SpecialInteraction
 {
     internal static string PotionQuestion(ItemEffect effect) => (effect switch
     {
-        ItemEffect.Dash => "青い薬がある。",
-        ItemEffect.Jump => "赤い薬がある。",
-        ItemEffect.Flight => "緑の薬がある。",
+        ItemEffect.Dash => "There is a blue potion.",
+        ItemEffect.Jump => "There is a red potion.",
+        ItemEffect.Flight => "There is a green potion.",
         _ => throw new ArgumentOutOfRangeException(nameof(effect))
-    }) + "\n飲んでみますか？";
+    }) + "\nWill you drink it?";
     internal static SpecialObject? Target(World world, Vector3 eye, Vector3 forward)
         => world.Sectors.SelectMany(s => s.SpecialObjects)
             .Where(o => o.Definition.Kind != SpecialKind.Item || !world.Progress.Collected(o.Definition.Id))

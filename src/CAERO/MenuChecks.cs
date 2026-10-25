@@ -25,7 +25,7 @@ internal static class MenuChecks
         Check(flow.Screen == GameScreen.Title && flow.Confirm(false) == MenuAction.NewGame, "boot opens title rather than gameplay");
         flow.Navigate(1, false); Check(flow.Confirm(false) == MenuAction.Controls, "no save skips Continue but offers controls");
         flow.ShowControls();
-        Check(!flow.ControlsFromGame && GameMenus.FlightDescription(flow.ControlsFromGame && true) == "？？？",
+        Check(!flow.ControlsFromGame && GameMenus.FlightDescription(flow.ControlsFromGame && true) == "???",
             "title controls hide flight instructions even with a flight-enabled save");
         flow.Back(); Check(flow.Screen == GameScreen.Title && flow.Selected == 2, "title controls return to title without starting a game");
         flow.Navigate(1, false); Check(flow.Confirm(false) == MenuAction.Exit, "fourth title entry exits");
@@ -34,12 +34,12 @@ internal static class MenuChecks
         flow.Start(); flow.Pause(); Check(flow.Screen == GameScreen.Paused && flow.Confirm(true) == MenuAction.Resume, "Enter pause offers resume");
         flow.Navigate(1, true); Check(flow.Confirm(true) == MenuAction.Controls, "pause offers controls");
         flow.ShowControls();
-        Check(flow.ControlsFromGame && GameMenus.FlightDescription(flow.ControlsFromGame && true).Contains("飛行")
-            && GameMenus.FlightDescription(flow.ControlsFromGame && false) == "？？？",
+        Check(flow.ControlsFromGame && GameMenus.FlightDescription(flow.ControlsFromGame && true).Contains("flying")
+            && GameMenus.FlightDescription(flow.ControlsFromGame && false) == "???",
             "pause controls still reveal flight instructions only after acquiring flight");
         flow.Back(); Check(flow.Screen == GameScreen.Paused, "controls return to pause");
         flow.Navigate(1, true); Check(flow.Confirm(true) == MenuAction.Title, "pause offers return to title");
-        Check(GameMenus.FlightDescription(false) == "？？？" && GameMenus.FlightDescription(true).Contains("飛行"), "flight instructions depend on the acquired ability");
+        Check(GameMenus.FlightDescription(false) == "???" && GameMenus.FlightDescription(true).Contains("flying"), "flight instructions depend on the acquired ability");
         var pulse = Enumerable.Range(0, 121).Select(i => GameMenus.AbilityOpacity(ItemEffect.Flight, true, i / 100.0)).ToArray();
         Check(pulse.Min() >= .2f && pulse.Max() <= 1 && pulse.Max() - pulse.Min() > .6f, "flight icon clearly pulses without vanishing");
         Check(Enumerable.Range(0, 121).All(i => GameMenus.AbilityOpacity(ItemEffect.Flight, false, i / 100.0) == 1
@@ -262,7 +262,7 @@ internal static class MenuChecks
                 session.Player.Flying = false; session.Examine(); session.Conversation.Update(100);
                 Check(session.Conversation.Speaker == observer, "E restores conversation after flight");
                 Shot("message-person-no-icons", () => session.Draw(text, true)); session.Conversation.Close();
-                session.Conversation.Confirm("ワープ装置", "ワープします。", () => { });
+                session.Conversation.Confirm("Warp Device", "Warp now.", () => { });
                 Shot("message-choice-no-icons", () => session.Draw(text, true)); session.Conversation.Close();
                 Shot("after-message-icons", () => session.Draw(text, true));
                 flow.Start(); flow.Pause(); session.Pause();

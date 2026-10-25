@@ -53,7 +53,7 @@ internal static class SpecialContent
         => Islands.TryGetValue(number, out var entries) ? entries : [];
     internal static string FontCharacters => string.Concat(Data.Objects.Select(d => d.Name + string.Concat(d.Pages)
         + (d.Choice is { } choice ? string.Concat(choice.AllPages) : "")))
-        + "調べる取得するあなたは脱出した飛行能力が必要です碑文アイテム青い薬がある。赤い薬がある。緑の薬がある。飲んでみますか？";
+        + "";
 
     internal static SpecialCatalogue Load(string path)
     {

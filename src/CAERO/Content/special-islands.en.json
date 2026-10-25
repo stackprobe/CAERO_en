@@ -1,0 +1,1320 @@
+{
+  "version": 1,
+  "dashBonusPerItem": 3,
+  "jumpBonusPerItem": 0.12,
+  "objects": [
+    {
+      "id": "island-1-01",
+      "island": "1",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        28,
+        0,
+        24
+      ],
+      "yawDegrees": 225,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Though sacred numbers are many,\nonly one may be divided into two equal parts.",
+        "In the land of that solitary number, the next words await."
+      ]
+    },
+    {
+      "id": "island-1-02",
+      "island": "1",
+      "kind": "inscription",
+      "name": "Blue Inscription",
+      "surface": "hallRoof",
+      "position": [
+        -22,
+        0,
+        -32
+      ],
+      "yawDegrees": 60,
+      "searchRadius": 5,
+      "color": "668AAE",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Among the sacred numbers,\nonly the first knows the art of dividing itself into two equal parts.",
+        "Yet none of the sacred ones that follow possess that art.",
+        "Seek the youngest who knows it not.\nIn the land of that number, something awaits the traveler."
+      ]
+    },
+    {
+      "id": "island-1-03",
+      "island": "1",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "towerInterior",
+      "position": [
+        18,
+        0,
+        22
+      ],
+      "yawDegrees": 55,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Beginnings are always special.\nBut if something is merely the first, others will follow in time.",
+        "What is interesting is being both the first and the only one.",
+        "...Apparently, there is a number like that.\nThat is all. Just a thought."
+      ]
+    },
+    {
+      "id": "island-1-04",
+      "island": "1",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        -20,
+        0,
+        -26
+      ],
+      "yawDegrees": 120,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "There is not necessarily just one beginning.\nWhat comes first depends on what you are counting.",
+        "...That is what the inscription over there is saying.",
+        "That is all. Just a thought..."
+      ]
+    },
+    {
+      "id": "island-1-05",
+      "island": "1",
+      "kind": "resident",
+      "name": "Traveler gazing at an island",
+      "surface": "cornerPlatform",
+      "position": [
+        36.3,
+        0,
+        36.3
+      ],
+      "yawDegrees": 45,
+      "searchRadius": 0,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "I am looking at that island.\n...",
+        "Were you sent to this world too?\n...I see. You too.",
+        "Where did you come from?\n...No, sorry. You cannot remember, can you?",
+        "It is the same for all of us.\nNone of us can remember anything from before we came here.",
+        "I tried to remember too.\nThough I do not even know what I am supposed to remember.",
+        "How many days has it been since I got here...?\nI have not been here that long, but the days are short in this place.",
+        "I am not as used to it as the ones who have been here forever.\n...I still stand here thinking about it, after all.",
+        "You never get hungry or sleepy.\nAt first, I thought that sounded easy enough.",
+        "But when you can just stand around doing nothing...\nYou find you can keep doing it forever.",
+        "...Have you explored this island yet?\nIf not, you should take a little walk.",
+        "There is a blue inscription and a red one, right?\nApparently, they each have their own purpose.",
+        "The blue inscriptions lead to things that help you on your journey.\nThe red ones lead to its end.",
+        "...Someone I met here told me that.\nHe has already gone on to another island.",
+        "And every island has a number.\nYou should remember that.",
+        "I thought they were just landmarks.\n...But apparently, they are very important.",
+        "The inscriptions point to island numbers.\nUnderstand the words, and you will know where to go.",
+        "I have given it some thought myself.\n...Only thought, though. I am still here.",
+        "I do want to go home.\nEven though I cannot remember anywhere to go home to.",
+        "Is someone waiting for me out there?\n...If I have kept them waiting, I feel bad about that.",
+        "But if someone told me I could go home right now...\nWould I be able to say yes straight away?",
+        "If I stay here, I do not have to remember anything.\n...Sometimes I catch myself thinking that.",
+        "You are going on, aren't you?\nThen go while your legs still want to move.",
+        "I will keep looking a little longer.\n...I wonder if there is someone on that island too."
+      ]
+    },
+    {
+      "id": "island-1-06",
+      "island": "1",
+      "kind": "resident",
+      "name": "Person sitting on the rooftop",
+      "surface": "towerRoof",
+      "position": [
+        14.2,
+        0,
+        31.8
+      ],
+      "yawDegrees": 135,
+      "searchRadius": 0,
+      "color": "AC6161",
+      "pose": "sitting",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Jumping off there will not kill you.\n...I wonder why. It just hurts.",
+        "Jumping into the sea is no use either.\nA fish eats you...and again, it just hurts.",
+        "That fish does not like people diving into its home.\nIt leaves you alone if you swim on the surface.",
+        "If you know that, you can spare yourself the pain.\n...That is all, really.",
+        "...\nIt is nice and quiet here.",
+        "You mean to keep going, don't you?\n...Have you solved the inscriptions?"
+      ],
+      "choice": {
+        "yesPages": [
+          "I see.\n...Then that is all right.",
+          "...Good luck."
+        ],
+        "noPages": [
+          "...Oh, I see. Solving riddles is fun, isn't it?",
+          "You look like someone who would rather not be told the answer. Would you like to keep thinking...?\n...Or would you like me to tell you?"
+        ],
+        "noChoice": {
+          "yesPages": [
+            "Then I will tell you.\nJust the answers.",
+            "Red is 2. Blue is 3.\n...Those are the numbers the inscriptions point to.",
+            "2 is next door.\n3 is very close too.",
+            "See the fellow standing on that platform?\nIt is the island he is always looking at.",
+            "...You do not have to thank me.\nYou asked, so I answered."
+          ],
+          "noPages": [
+            "All right.\n...Good luck."
+          ]
+        }
+      }
+    },
+    {
+      "id": "island-1-07",
+      "island": "1",
+      "kind": "resident",
+      "name": "Huddled figure",
+      "surface": "hallRoof",
+      "position": [
+        9,
+        0,
+        -10
+      ],
+      "yawDegrees": 180,
+      "searchRadius": 10,
+      "color": "AC6161",
+      "pose": "sitting",
+      "leanAgainstWall": true,
+      "huddled": true,
+      "minResidentDistance": 10,
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "I was collecting stones,\nlining them up to pass the time.",
+        "But no matter how hard I tried, I could not arrange them in a rectangle.",
+        "Then someone told me,\n'That is something very sacred.'",
+        "But I went and found more stones,\nand this time I made a neat rectangle.",
+        "Then he looked sad and said,\n'It is no longer sacred. There will be no sacred favor for it now.'",
+        "He said it was\nsomething very important."
+      ]
+    },
+    {
+      "id": "island-2-01",
+      "island": "2",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        14.2,
+        0,
+        31.8
+      ],
+      "yawDegrees": 135,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "In the beginning, there was one who made heaven and earth.\nHe parted light from darkness,",
+        "set the sea apart from the land,\nand filled the earth with every living thing.",
+        "At last, his work of creation was complete,\nand he made the following day a sacred day of rest.",
+        "Count the days from the beginning of creation.\nIn the land of that number, the next words await."
+      ]
+    },
+    {
+      "id": "island-2-02",
+      "island": "2",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "towerInterior",
+      "position": [
+        26,
+        0,
+        24
+      ],
+      "yawDegrees": 235,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "I read a novel once.\nWhat was the title...? Something about everyone becoming a certain letter of the alphabet, I think.",
+        "There was a story about a lonely number in it.\n...Yes, reading that inscription just reminded me.",
+        "That is all. Just a thought..."
+      ]
+    },
+    {
+      "id": "island-3-01",
+      "island": "3",
+      "kind": "inscription",
+      "name": "Blue Inscription",
+      "surface": "hallRoof",
+      "position": [
+        0,
+        0,
+        -20
+      ],
+      "yawDegrees": 115,
+      "searchRadius": 5,
+      "color": "668AAE",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Among the sacred numbers are those whose reflections, too, hold sacred power.\nFind the two smallest pairs.",
+        "In the four lands facing one another across the mirror,\nthings that aid the traveler are said to sleep."
+      ]
+    },
+    {
+      "id": "island-3-02",
+      "island": "3",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        -4,
+        0,
+        -29
+      ],
+      "yawDegrees": 65,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Numbers in a mirror...\nApparently, some numbers keep the same property when you read their digits backward.",
+        "And they become a different number from the original.\n...Perhaps this inscription wants us to find the smaller pairs among them.",
+        "Well, I do not really understand it myself.",
+        "...Sacred numbers, hm.",
+        "'Srebmun dercas.'",
+        "I was just reading it backward..."
+      ]
+    },
+    {
+      "id": "island-3-03",
+      "island": "3",
+      "kind": "resident",
+      "name": "Huddled figure",
+      "surface": "towerInterior",
+      "position": [
+        18,
+        0,
+        26
+      ],
+      "yawDegrees": 90,
+      "searchRadius": 2,
+      "color": "AC6161",
+      "pose": "sitting",
+      "huddled": true,
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Sacred numbers, sacred stones, sacred power...\nThe inscriptions put it in different ways, but they all point to the same thing. The same person wrote them, too.",
+        "Well, people had all sorts of names for it long ago.",
+        "The blue inscription is not here.\nTry somewhere with a little more fresh air."
+      ]
+    },
+    {
+      "id": "island-13-01",
+      "island": "13",
+      "kind": "item",
+      "name": "Potion of Speed",
+      "surface": "hallRoof",
+      "position": [
+        -6,
+        0,
+        -23
+      ],
+      "yawDegrees": 0,
+      "searchRadius": 5,
+      "color": "48C2FF",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "dash",
+      "pages": [
+        "You drank the potion. Your sprint speed increased."
+      ]
+    },
+    {
+      "id": "island-31-01",
+      "island": "31",
+      "kind": "item",
+      "name": "Potion of Leaping",
+      "surface": "hallRoof",
+      "position": [
+        -6,
+        0,
+        -23
+      ],
+      "yawDegrees": 0,
+      "searchRadius": 5,
+      "color": "FF616E",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "jump",
+      "pages": [
+        "You drank the potion. Your jump strength increased."
+      ]
+    },
+    {
+      "id": "island-17-01",
+      "island": "17",
+      "kind": "item",
+      "name": "Potion of Leaping",
+      "surface": "hallRoof",
+      "position": [
+        -6,
+        0,
+        -23
+      ],
+      "yawDegrees": 0,
+      "searchRadius": 5,
+      "color": "FF616E",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "jump",
+      "pages": [
+        "You drank the potion. Your jump strength increased."
+      ]
+    },
+    {
+      "id": "island-71-01",
+      "island": "71",
+      "kind": "item",
+      "name": "Potion of Speed",
+      "surface": "hallRoof",
+      "position": [
+        -6,
+        0,
+        -23
+      ],
+      "yawDegrees": 0,
+      "searchRadius": 5,
+      "color": "48C2FF",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "dash",
+      "pages": [
+        "You drank the potion. Your sprint speed increased."
+      ]
+    },
+    {
+      "id": "island-71-02",
+      "island": "71",
+      "kind": "inscription",
+      "name": "Blue Inscription",
+      "surface": "hallRoof",
+      "position": [
+        -4,
+        0,
+        -29
+      ],
+      "yawDegrees": 20,
+      "searchRadius": 5,
+      "color": "668AAE",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Once there lived a sage who knew the depths of number.\nHe laid anew the foundations of geometry.",
+        "In the year formed by twice nine hundred and eighty-three,\na great honor was bestowed upon his wisdom, yet he did not appear at the ceremony.",
+        "Yet no sage is beyond error.",
+        "There was a number he called sacred and indivisible.",
+        "That number was neither sacred nor indivisible.",
+        "Seek the land of the number the sage mistook."
+      ]
+    },
+    {
+      "id": "island-71-03",
+      "island": "71",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        -22,
+        0,
+        -18
+      ],
+      "yawDegrees": 65,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "You would think a great sage knows everything, wouldn't you?",
+        "But even the finest mind can be mistaken.",
+        "Sometimes it is precisely because someone is so great\nthat a small mistake is remembered for generations.",
+        "...Come to think of it, that inscription told of a sage like that.\nThat is all. Just a thought."
+      ]
+    },
+    {
+      "id": "island-57-01",
+      "island": "57",
+      "kind": "item",
+      "name": "Potion of Flight",
+      "surface": "hallRoof",
+      "position": [
+        -6,
+        0,
+        -23
+      ],
+      "yawDegrees": 0,
+      "searchRadius": 5,
+      "color": "68F29D",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "flight",
+      "pages": [
+        "You drank the potion. You gained the ability to fly.\nPress F while jumping to fly continuously in the direction you are looking. Hold Shift to accelerate."
+      ]
+    },
+    {
+      "id": "island-57-02",
+      "island": "57",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        3,
+        0,
+        -17
+      ],
+      "yawDegrees": 300,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "You did well to find this place.",
+        "I mean, it is not fair. This one is not red.\nIts number is black.",
+        "...Do not worry. It will not happen again.\nOh, what am I even saying...?"
+      ]
+    },
+    {
+      "id": "island-7-01",
+      "island": "7",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        22,
+        0,
+        29
+      ],
+      "yawDegrees": 180,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Each night, twins are born.\nSeek the elder twin made sacred beneath the moon of the sixteenth night.",
+        "The next words sleep in that land."
+      ]
+    },
+    {
+      "id": "island-7-02",
+      "island": "7",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -22,
+        0,
+        9
+      ],
+      "yawDegrees": 35,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "It seems strange to call one twin the elder brother and the other the younger.\nThey are almost the same.",
+        "But look closely, and there is a small difference. One...no, two.",
+        "Well, I suppose the one born first is the elder.",
+        "Come to think of it, how many pairs of twins are there?\nMore than anyone could ever count, perhaps."
+      ]
+    },
+    {
+      "id": "island-7-03",
+      "island": "7",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        3,
+        0,
+        24
+      ],
+      "yawDegrees": 255,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "To define the natural numbers, you pick the first one, then define 'the next number.'\nAfter 1 comes 2, after 2 comes 3, after 3 comes 4...like that.",
+        "So if you follow the definition, the smaller numbers appear first.\nIf numbers have brothers, I suppose the smaller one would be the elder."
+      ]
+    },
+    {
+      "id": "island-227-01",
+      "island": "227",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        22,
+        0,
+        29
+      ],
+      "yawDegrees": 180,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Once there lived a man who sat in judgment of the law\nand set hard questions before the sages.",
+        "Even centuries later, he confounded those who followed.\nIn a certain sequence of numbers, he discerned an unchanging law.",
+        "Yet a great sage of a later age broke it, declaring:\n'No, one of these can be split in two.'",
+        "Of those two sacred fragments, seek the smaller."
+      ]
+    },
+    {
+      "id": "island-227-02",
+      "island": "227",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -18,
+        0,
+        12
+      ],
+      "yawDegrees": 120,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "It worked for the first five, right?\nThe fellow who spotted the pattern was impressive, but so was the one who disproved it."
+      ]
+    },
+    {
+      "id": "island-227-03",
+      "island": "227",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        7,
+        0,
+        23
+      ],
+      "yawDegrees": 270,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Apparently, that great sage also tackled a problem about crossing seven bridges exactly once each.\nAnd proved that you could not do it, no matter how you tried.",
+        "...Amazing that you can even know something like that."
+      ]
+    },
+    {
+      "id": "island-641-01",
+      "island": "641",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        15,
+        0,
+        23
+      ],
+      "yawDegrees": 90,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Fortunate is the one surrounded by companions.",
+        "Many have companions at all four corners.\nSeek the fourth sacred one among them."
+      ]
+    },
+    {
+      "id": "island-641-02",
+      "island": "641",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -17,
+        0,
+        3
+      ],
+      "yawDegrees": 110,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Have you found the wonderful items on those four islands yet?\nYou see, their numbers are very similar to the number of the island you need to find next.",
+        "Perhaps that is not much of a hint...",
+        "...What? A map?\nAre you looking for a map?"
+      ],
+      "choice": {
+        "yesPages": [
+          "There are no maps in this world.\nWe cannot look at a map.",
+          "'We' cannot..."
+        ],
+        "noPages": [
+          "Then you already understand...",
+          "It even looks very much like one of those four islands.\nYou will know when you get there. ...Or perhaps not."
+        ]
+      }
+    },
+    {
+      "id": "island-641-03",
+      "island": "641",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -4,
+        0,
+        27
+      ],
+      "yawDegrees": 225,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Down on the ground, you cannot tell;\nup in the sky, you might see well?",
+        "I climbed a tower to try my luck;\nthe fog was thick, and I was stuck...",
+        "Those slanting bridges, loved by all;\nif only we had a map at all!"
+      ]
+    },
+    {
+      "id": "island-641-04",
+      "island": "641",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        10,
+        0,
+        -30
+      ],
+      "yawDegrees": 155,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Each of the four companions always has a twin.",
+        "...Well, you can tell that if you look closely at the map."
+      ]
+    },
+    {
+      "id": "island-641-05",
+      "island": "641",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        -6,
+        0,
+        -11
+      ],
+      "yawDegrees": 0,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "sitting",
+      "leanAgainstWall": true,
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "I have checked a hundred and thirty candidate pairs of twins, one after another, and still cannot find the fourth...\nThe first three were easy enough.",
+        "Damn it. How many more pairs do I have to check...?"
+      ]
+    },
+    {
+      "id": "island-641-06",
+      "island": "641",
+      "kind": "resident",
+      "name": "Person gazing into the distance",
+      "surface": "towerRoof",
+      "position": [
+        16,
+        0,
+        30
+      ],
+      "yawDegrees": 331.4122,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "I know a few places where five sacred ones form a cross.",
+        "Though on the map, that cross is tilted forty-five degrees.",
+        "An island with eight bridges. The fourth of those...",
+        "...Even I cannot see it from here."
+      ]
+    },
+    {
+      "id": "island-701-01",
+      "island": "701",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        25,
+        0,
+        27
+      ],
+      "yawDegrees": 200,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "The greatest sage in all of history\nfound a wondrous law amid lawless chaos.",
+        "Forty trials succeeded, every one.\nYet the forty-first failed, and the law was broken.",
+        "Seek the place brought forth by the final success."
+      ]
+    },
+    {
+      "id": "island-701-02",
+      "island": "701",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -26,
+        0,
+        16
+      ],
+      "yawDegrees": 280,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Such a beautiful rule, but it does not look very beautiful on the map...\nIf only the first island had been 41."
+      ]
+    },
+    {
+      "id": "island-1601-01",
+      "island": "1601",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        30,
+        0,
+        22
+      ],
+      "yawDegrees": 270,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "There were two stonemasons.\nEach carved a die of stone with his own hands, and they vied to make the larger.",
+        "The contest was always close;\nthe larger die was but one measure greater along each edge.",
+        "The loser cut from the winner's die a volume equal to his own.",
+        "Thus their contest was repeated many times.\nOn rare occasions, the stone left behind held sacred power.",
+        "The people set the sacred stones in order, from smallest to largest.",
+        "Seek the twenty-third stone.\nThere, the way shall open."
+      ]
+    },
+    {
+      "id": "island-1601-02",
+      "island": "1601",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -21,
+        0,
+        26
+      ],
+      "yawDegrees": 75,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "What is sacred power, anyway?",
+        "I have heard that no matter how hard you strike a sacred stone, it will not split.\nI suppose that is what makes it sacred."
+      ]
+    },
+    {
+      "id": "island-1601-03",
+      "island": "1601",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        4,
+        0,
+        13
+      ],
+      "yawDegrees": 195,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "A die has six identical square faces, so each number from one to six has an equal chance of coming up.\nA clever shape, isn't it?"
+      ]
+    },
+    {
+      "id": "island-1601-04",
+      "island": "1601",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        -19,
+        0,
+        -30
+      ],
+      "yawDegrees": 25,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "I was sure it meant that island country out in the tropical sea.\nYou know, as if some famous mathematician from there had discovered them...",
+        "...Apparently, it has nothing to do with the place.\nWhat a confusing name..."
+      ]
+    },
+    {
+      "id": "island-1601-05",
+      "island": "1601",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        9,
+        0,
+        -19
+      ],
+      "yawDegrees": 250,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "sitting",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Start at seven. Then add twelve, eighteen, twenty-four...in order...\nThirty-eight tries, and only now the twenty-first hit...",
+        "...Almost there.\nCome on. Keep going..."
+      ]
+    },
+    {
+      "id": "island-1601-06",
+      "island": "1601",
+      "kind": "resident",
+      "name": "Person gazing into the distance",
+      "surface": "towerRoof",
+      "position": [
+        16,
+        0,
+        16
+      ],
+      "yawDegrees": 142.56369,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "...It means the first kind, doesn't it?",
+        "It says 'one measure greater,' right?\nNot two.",
+        "And it does not say to split it in half, either.",
+        "...Someone went off convinced it meant the second kind.\nIt is such a long way, too.",
+        "I bet he is sitting on an empty island with his head in his hands by now."
+      ]
+    },
+    {
+      "id": "island-5419-01",
+      "island": "5419",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        27,
+        0,
+        20
+      ],
+      "yawDegrees": 300,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Once there lived a sage who discerned a law of odd and even.\nHe declared that the odd would never be outnumbered by the even.",
+        "Through tens of millions of numbers, the law held firm,\nand was believed to be an eternal truth.",
+        "Decades passed, and another sage proved the law false,\nthough he knew not a single number at which it failed.",
+        "In time, one such failure was found,\nbut whether it was the youngest remained unknown.",
+        "After many more years, the youngest failure at last revealed itself.",
+        "That number is only half sacred.\nIt is the product of two truly sacred numbers.",
+        "Seek the greater of the two."
+      ]
+    },
+    {
+      "id": "island-5419-02",
+      "island": "5419",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -12,
+        0,
+        28
+      ],
+      "yawDegrees": 165,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Sacred numbers...\nSo there are half-sacred numbers too.",
+        "But then they are no longer sacred numbers, are they...?"
+      ]
+    },
+    {
+      "id": "island-5419-03",
+      "island": "5419",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -25,
+        0,
+        5
+      ],
+      "yawDegrees": 310,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Both those numbers have five digits, so I hear.\nI kept picking random five-digit numbers and trying them, but got nowhere.",
+        "Then someone else started checking them from the beginning, one by one.\nHe went on ahead without any trouble.",
+        "It was almost a bit of a letdown..."
+      ]
+    },
+    {
+      "id": "island-5419-04",
+      "island": "5419",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "hallRoof",
+      "position": [
+        -9,
+        0,
+        -27
+      ],
+      "yawDegrees": 100,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "There were some digits written on the floor.\nThey have weathered away now. Even then, I could not make out some of them...",
+        "I think it was...",
+        "'**615*257'"
+      ]
+    },
+    {
+      "id": "island-90263-01",
+      "island": "90263",
+      "kind": "inscription",
+      "name": "Purple Inscription",
+      "surface": "towerLanding",
+      "landing": 2,
+      "position": [
+        15,
+        0,
+        12.5
+      ],
+      "yawDegrees": 90,
+      "searchRadius": 0,
+      "color": "9374B5",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Once there lived a servant of God who sought the truth of numbers.",
+        "With eleven knights in his train,\nhe proclaimed them a sacred order to the world.",
+        "Yet two traitors lurked within their ranks,\nand three true knights had not been invited.",
+        "Centuries passed, and a sage arose.",
+        "He struck down one of the false knights.\nThat great deed was accomplished in silence alone.",
+        "The knights who bear that servant of God's name\nshall here be called the Knights of Prayer."
+      ]
+    },
+    {
+      "id": "island-90263-02",
+      "island": "90263",
+      "kind": "inscription",
+      "name": "Purple Inscription",
+      "surface": "towerLanding",
+      "landing": 3,
+      "position": [
+        15,
+        0,
+        31.5
+      ],
+      "yawDegrees": 90,
+      "searchRadius": 0,
+      "color": "9374B5",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "In distant India, counting beats,\na poet-sage discerned a rule.",
+        "Across the sea, far to the west,\nthe art of reckoning came to flower.",
+        "The sequence bears a sage's name.\nHow many pairs will next year bring?",
+        "Those that hold sacred power\nwe name the Knights of Succession."
+      ]
+    },
+    {
+      "id": "island-90263-03",
+      "island": "90263",
+      "kind": "inscription",
+      "name": "Red Inscription",
+      "surface": "towerInterior",
+      "position": [
+        22,
+        0,
+        28
+      ],
+      "yawDegrees": 180,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Here gather the knights who pass through the Million Gate.",
+        "From the Knights of Prayer, choose the two greatest.\nFrom the Knights of Succession, choose the single greatest.",
+        "Join the power of the three as one.",
+        "That power shall be sacred once again,\nand lead thee to the end of thy long journey."
+      ]
+    },
+    {
+      "id": "island-90263-04",
+      "island": "90263",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        -18,
+        0,
+        14
+      ],
+      "yawDegrees": 45,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Goes without saying, but you cannot fit through a gate if you are wider than the opening.\nApparently, even exactly a million will not fit through the 'Million Gate.'",
+        "Still, getting thrown out for being too big the moment you reach a million...\nBeing a knight is no easy life."
+      ]
+    },
+    {
+      "id": "island-90263-05",
+      "island": "90263",
+      "kind": "resident",
+      "name": "Traveler",
+      "surface": "ground",
+      "position": [
+        6,
+        0,
+        26
+      ],
+      "yawDegrees": 270,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "They say sacred numbers always lose their sacred power when you multiply them together.\nBut if you add them, sometimes the sacred power remains.",
+        "...The gods' favor is a fickle thing."
+      ]
+    },
+    {
+      "id": "island-1169587-02",
+      "island": "1169587",
+      "kind": "resident",
+      "name": "Traveler?",
+      "surface": "towerInterior",
+      "position": [
+        29.5,
+        0,
+        31
+      ],
+      "yawDegrees": 225,
+      "searchRadius": 0,
+      "color": "D8F4E8",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "Hello. You took your time.\nI was getting tired of waiting.",
+        "...Oh?\nYou still have not remembered anything?",
+        "And yet you made it all the way here.\nHa! Impressive. Just what I would expect of you.",
+        "It was your colleague who prepared this back door.",
+        "Still, what a troublesome, convoluted mechanism he made.\n...Well, I can think of a reason.",
+        "You were always showing him up with your mathematics, weren't you?\nI suppose this is his own little revenge. Ha ha ha.",
+        "Now then...what shall I do?",
+        "Yes, I think I will wait here a little longer.\nPerhaps another of our friends will arrive soon.",
+        "...Hm? Where is the exit?",
+        "Right there.\nGo on, look up."
+      ]
+    },
+    {
+      "id": "island-60493-01",
+      "island": "60493",
+      "kind": "resident",
+      "name": "Seated figure",
+      "surface": "ground",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yawDegrees": 45,
+      "searchRadius": 5,
+      "color": "AC6161",
+      "pose": "sitting",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "The first form, not the second?",
+        "You could have written that properly..."
+      ]
+    },
+    {
+      "id": "island-1169587-01",
+      "island": "1169587",
+      "kind": "exit",
+      "name": "Stone of Escape",
+      "surface": "towerLanding",
+      "landing": 1,
+      "position": [
+        22,
+        0,
+        12.2
+      ],
+      "yawDegrees": 0,
+      "searchRadius": 0,
+      "color": "D8F4E8",
+      "pose": "standing",
+      "age": "adult",
+      "gender": "male",
+      "effect": "none",
+      "pages": [
+        "The stone is shining.\nWill you touch it?"
+      ]
+    }
+  ]
+}

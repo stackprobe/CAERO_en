@@ -7,15 +7,15 @@ namespace Caero;
 internal sealed record WarpTerminal(int Dx, int Dz, int Distance, Vector3 LocalPosition, Vector3 LocalFacing)
 {
     internal string Direction => (Dx, Dz) switch {
-        (0, -1) => "北", (1, -1) => "北東", (1, 0) => "東", (1, 1) => "南東",
-        (0, 1) => "南", (-1, 1) => "南西", (-1, 0) => "西", _ => "北西"
+        (0, -1) => "North", (1, -1) => "Northeast", (1, 0) => "East", (1, 1) => "Southeast",
+        (0, 1) => "South", (-1, 1) => "Southwest", (-1, 0) => "West", _ => "Northwest"
     };
     internal string Letters => (Dz < 0 ? "N" : Dz > 0 ? "S" : "") + (Dx < 0 ? "W" : Dx > 0 ? "E" : "");
-    internal string ConfirmationMessage => "ワープしますか？　ワープ先は "
-        + string.Join(" ", new[] {
-            Dz == 0 ? null : $"{(Dz < 0 ? "北" : "南")}へ {Distance} 島",
-            Dx == 0 ? null : $"{(Dx < 0 ? "西" : "東")}へ {Distance} 島"
-        }.Where(part => part != null)) + " です。";
+    internal string ConfirmationMessage => "Warp to a destination "
+        + string.Join(" and ", new[] {
+            Dz == 0 ? null : $"{Distance} islands {(Dz < 0 ? "north" : "south")}",
+            Dx == 0 ? null : $"{Distance} islands {(Dx < 0 ? "west" : "east")}"
+        }.Where(part => part != null)) + " away?";
     internal bool Destination(long x, long z, out long targetX, out long targetZ)
     {
         Int128 a = (Int128)x + Dx * Distance, b = (Int128)z + Dz * Distance;
@@ -88,12 +88,12 @@ internal sealed record WarpTarget(Sector Sector, WarpTerminal Terminal)
 internal static class WarpTravel
 {
     internal const float ArrivalDrop = 1.1f;
-    internal const string UiCharacters = "調べてワープ北東南西島世界の端を越えるため移動できません装置しますか？　先はへです。";
+    internal const string UiCharacters = "";
     internal static bool Examine(World world, Explorer player, WarpTarget target, Conversation conversation, Action? beforeTravel = null)
     {
         if (player.Flying) return false;
         if (!target.Terminal.Destination(target.Sector.X, target.Sector.Z, out _, out _)) return false;
-        conversation.Confirm("ワープ装置", target.Terminal.ConfirmationMessage, () => {
+        conversation.Confirm("Warp Device", target.Terminal.ConfirmationMessage, () => {
             beforeTravel?.Invoke();
             Travel(world, player, target);
         });

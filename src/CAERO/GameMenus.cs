@@ -55,14 +55,14 @@ internal sealed class GameMenus : IDisposable
         Raylib.SetTextureFilter(trophy, TextureFilter.Bilinear);
     }
     public void Dispose() { Raylib.UnloadTexture(trophy); Raylib.UnloadTexture(title); }
-    private const string SaveLossWarning = "現在のセーブデータは失われます。";
-    internal const string ClearAchievementText = "クリア実績：脱出を達成";
-    internal const string Characters = "はじめから（ゲームスタート）コンテニュー終了ポーズゲームを続ける操作方法タイトルへもどる［Enter / Esc］戻る移動視点・飛行方向高速移動ジャンプ・遊泳上昇飛行薬取得後、ジャンプ中に開始 / 解除話す・調べる / 全文表示・次ページ本文を閉じる / マウス解放（デスクトップや他のアプリを操作したいときに）ポーズ・決定全画面切替？？？" + SaveLossWarning;
-    internal static string FlightDescription(bool canFly) => canFly ? "飛行薬取得後、ジャンプ中に開始 / 解除" : "？？？";
+    private const string SaveLossWarning = "Your current save data will be lost.";
+    internal const string ClearAchievementText = "Achievement: Escaped";
+    internal const string Characters = "" + SaveLossWarning;
+    internal static string FlightDescription(bool canFly) => canFly ? "After obtaining the flight potion: start flying while jumping / stop flying" : "???";
     private static readonly Color Ink = new(232, 234, 222, 255), Muted = new(139, 158, 162, 255);
     private static string[] Entries(GameScreen screen) => screen == GameScreen.Title
-        ? ["はじめから（ゲームスタート）", "コンテニュー", "操作方法", "終了"]
-        : ["ゲームを続ける", "操作方法", "タイトルへもどる"];
+        ? ["New Game", "Continue", "Controls", "Quit"]
+        : ["Resume Game", "Controls", "Return to Title"];
     private static Rectangle Button(GameScreen screen, int index)
     {
         int w = Raylib.GetScreenWidth(), h = Raylib.GetScreenHeight();
@@ -107,7 +107,7 @@ internal sealed class GameMenus : IDisposable
         else Raylib.DrawRectangle(0, 0, w, h, new Color(7, 14, 20, flow.Screen == GameScreen.Controls ? 255 : 218));
         if (!showItems) return;
         if (flow.Screen == GameScreen.Controls) { DrawControls(flow.ControlsFromGame && canFly); return; }
-        if (flow.Screen == GameScreen.Paused) Center("ポーズ", h * .24f, Math.Clamp(w / 45f, 22, 34), Ink);
+        if (flow.Screen == GameScreen.Paused) Center("Pause", h * .24f, Math.Clamp(w / 45f, 22, 34), Ink);
         string[] entries = Entries(flow.Screen);
         for (int i = 0; i < entries.Length; i++)
         {
@@ -156,11 +156,11 @@ internal sealed class GameMenus : IDisposable
     private void DrawControls(bool canFly)
     {
         int w = Raylib.GetScreenWidth(), h = Raylib.GetScreenHeight();
-        Center("操作方法", h * .12f, Math.Clamp(w / 46f, 21, 32), Ink);
-        (string Key, string Action)[] rows = [("WASD", "移動"), ("Mouse", "視点"), ("Shift", "高速移動"),
-            ("Space", "ジャンプ・遊泳上昇"), ("F", FlightDescription(canFly)),
-            ("E / Space", "話す・調べる / 全文表示・次ページ"), ("Esc", "本文を閉じる / マウス解放（デスクトップや他のアプリを操作したいときに）"),
-            ("Enter", "ポーズ・決定"), ("Alt + Enter", "全画面切替")];
+        Center("Controls", h * .12f, Math.Clamp(w / 46f, 21, 32), Ink);
+        (string Key, string Action)[] rows = [("WASD", "Move"), ("Mouse", "Look"), ("Shift", "Move faster"),
+            ("Space", "Jump / swim upward"), ("F", FlightDescription(canFly)),
+            ("E / Space", "Talk / examine / show all text / next page"), ("Esc", "Close text / release the mouse (to use the desktop or other applications)"),
+            ("Enter", "Pause / confirm"), ("Alt + Enter", "Toggle fullscreen")];
         float size = Math.Clamp(Math.Min(w / 65f, h / 32f), 14, 22), row = h * .058f;
         float x = Math.Max(24, w * .16f);
         for (int i = 0; i < rows.Length; i++)
@@ -168,7 +168,7 @@ internal sealed class GameMenus : IDisposable
             text.Label(rows[i].Key, x, h * .24f + i * row, size, Muted);
             text.Label(rows[i].Action, w * .37f, h * .24f + i * row, size, Ink);
         }
-        Center("［Enter / Esc］戻る", h * .89f, size, Muted);
+        Center("[Enter / Esc] Back", h * .89f, size, Muted);
     }
     internal static float AbilityOpacity(ItemEffect effect, bool flying, double seconds)
         => effect == ItemEffect.Flight && flying ? .25f + .75f * (.5f + .5f * (float)Math.Cos(seconds * Math.Tau / 1.2)) : 1;

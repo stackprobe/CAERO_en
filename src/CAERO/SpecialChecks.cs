@@ -375,8 +375,8 @@ internal static class SpecialChecks
                 SpecialInteraction.Examine(world, player, prop, session);
                 if (prop.Definition.Kind == SpecialKind.Item)
                 {
-                    string color = prop.Definition.Effect switch { ItemEffect.Dash => "青い", ItemEffect.Jump => "赤い", _ => "緑の" };
-                    Check(session.AwaitingChoice && session.Text == color + "薬がある。\n飲んでみますか？"
+                    string color = prop.Definition.Effect switch { ItemEffect.Dash => "blue", ItemEffect.Jump => "red", _ => "green" };
+                    Check(session.AwaitingChoice && session.Text == "There is a " + color + " potion.\nWill you drink it?"
                         && !world.Progress.Collected(prop.Definition.Id) && !player.ConsumePotionDrink(),
                         "color-specific question precedes collection, abilities and drink sound");
                     session.SelectAnswer(false); session.Advance();
