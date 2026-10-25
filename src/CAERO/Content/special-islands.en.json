@@ -47,7 +47,7 @@
       "pages": [
         "Among the sacred numbers,\nonly the first knows the art of dividing itself into two equal parts.",
         "Yet none of the sacred ones that follow possess that art.",
-        "Seek the youngest who knows it not.\nIn the land of that number, something awaits the traveler."
+        "Seek the smallest among those who lack this gift.\nIn the land of that number, something awaits the traveler."
       ]
     },
     {
@@ -71,7 +71,7 @@
       "pages": [
         "Beginnings are always special.\nBut if something is merely the first, others will follow in time.",
         "What is interesting is being both the first and the only one.",
-        "...Apparently, there is a number like that.\nThat is all. Just a thought."
+        "...Apparently, there's a number like that.\nThat's all. Just a thought."
       ]
     },
     {
@@ -93,9 +93,9 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "There is not necessarily just one beginning.\nWhat comes first depends on what you are counting.",
-        "...That is what the inscription over there is saying.",
-        "That is all. Just a thought..."
+        "There isn't necessarily just one beginning.\nWhat comes first depends on what you're counting.",
+        "...That's what the inscription over there is saying.",
+        "That's all. Just a thought..."
       ]
     },
     {
@@ -117,29 +117,29 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "I am looking at that island.\n...",
+        "I'm looking at that island.\n...",
         "Were you sent to this world too?\n...I see. You too.",
-        "Where did you come from?\n...No, sorry. You cannot remember, can you?",
-        "It is the same for all of us.\nNone of us can remember anything from before we came here.",
-        "I tried to remember too.\nThough I do not even know what I am supposed to remember.",
-        "How many days has it been since I got here...?\nI have not been here that long, but the days are short in this place.",
-        "I am not as used to it as the ones who have been here forever.\n...I still stand here thinking about it, after all.",
+        "Where did you come from?\n...No, sorry. You can't remember, can you?",
+        "It's the same for all of us.\nNone of us can remember anything from before we came here.",
+        "I tried to remember too.\nThough I don't even know what I'm supposed to remember.",
+        "How many days has it been since I got here...?\nI haven't been here that long, but the days are short in this place.",
+        "I'm not as used to it as the ones who have been here forever.\n...I still stand here thinking about it, after all.",
         "You never get hungry or sleepy.\nAt first, I thought that sounded easy enough.",
         "But when you can just stand around doing nothing...\nYou find you can keep doing it forever.",
         "...Have you explored this island yet?\nIf not, you should take a little walk.",
-        "There is a blue inscription and a red one, right?\nApparently, they each have their own purpose.",
+        "There's a blue inscription and a red one, right?\nApparently, they each have their own purpose.",
         "The blue inscriptions lead to things that help you on your journey.\nThe red ones lead to its end.",
         "...Someone I met here told me that.\nHe has already gone on to another island.",
         "And every island has a number.\nYou should remember that.",
         "I thought they were just landmarks.\n...But apparently, they are very important.",
-        "The inscriptions point to island numbers.\nUnderstand the words, and you will know where to go.",
-        "I have given it some thought myself.\n...Only thought, though. I am still here.",
-        "I do want to go home.\nEven though I cannot remember anywhere to go home to.",
-        "Is someone waiting for me out there?\n...If I have kept them waiting, I feel bad about that.",
+        "The inscriptions point to island numbers.\nUnderstand the words, and you'll know where to go.",
+        "I've given it some thought myself.\n...Only thought, though. I'm still here.",
+        "I do want to go home.\nEven though I can't remember anywhere to go home to.",
+        "Is someone waiting for me out there?\n...If I've kept them waiting, I feel bad about that.",
         "But if someone told me I could go home right now...\nWould I be able to say yes straight away?",
-        "If I stay here, I do not have to remember anything.\n...Sometimes I catch myself thinking that.",
-        "You are going on, aren't you?\nThen go while your legs still want to move.",
-        "I will keep looking a little longer.\n...I wonder if there is someone on that island too."
+        "If I stay here, I don't have to remember anything.\n...Sometimes I catch myself thinking that.",
+        "You're going on, aren't you?\nThen go while your legs still want to move.",
+        "I'll keep looking a little longer.\n...I wonder if there's someone on that island too."
       ]
     },
     {
@@ -161,16 +161,16 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "Jumping off there will not kill you.\n...I wonder why. It just hurts.",
+        "Jumping off there won't kill you.\n...I wonder why. It just hurts.",
         "Jumping into the sea is no use either.\nA fish eats you...and again, it just hurts.",
-        "That fish does not like people diving into its home.\nIt leaves you alone if you swim on the surface.",
-        "If you know that, you can spare yourself the pain.\n...That is all, really.",
-        "...\nIt is nice and quiet here.",
+        "That fish doesn't like people diving into its home.\nIt leaves you alone if you swim on the surface.",
+        "If you know that, you can spare yourself the pain.\n...That's all, really.",
+        "...\nIt's nice and quiet here.",
         "You mean to keep going, don't you?\n...Have you solved the inscriptions?"
       ],
       "choice": {
         "yesPages": [
-          "I see.\n...Then that is all right.",
+          "I see.\n...Then that's all right.",
           "...Good luck."
         ],
         "noPages": [
@@ -179,11 +179,11 @@
         ],
         "noChoice": {
           "yesPages": [
-            "Then I will tell you.\nJust the answers.",
+            "Then I'll tell you.\nJust the answers.",
             "Red is 2. Blue is 3.\n...Those are the numbers the inscriptions point to.",
             "2 is next door.\n3 is very close too.",
-            "See the fellow standing on that platform?\nIt is the island he is always looking at.",
-            "...You do not have to thank me.\nYou asked, so I answered."
+            "See the fellow standing on that platform?\nIt's the island he is always looking at.",
+            "...You don't have to thank me.\nYou asked, so I answered."
           ],
           "noPages": [
             "All right.\n...Good luck."
@@ -214,10 +214,10 @@
       "effect": "none",
       "pages": [
         "I was collecting stones,\nlining them up to pass the time.",
-        "But no matter how hard I tried, I could not arrange them in a rectangle.",
-        "Then someone told me,\n'That is something very sacred.'",
+        "But no matter how hard I tried, I couldn't arrange them in a rectangle.",
+        "Then someone told me,\n'That's something very sacred.'",
         "But I went and found more stones,\nand this time I made a neat rectangle.",
-        "Then he looked sad and said,\n'It is no longer sacred. There will be no sacred favor for it now.'",
+        "Then he looked sad and said,\n'It isn't sacred anymore. It won't receive any blessings now.'",
         "He said it was\nsomething very important."
       ]
     },
@@ -265,9 +265,9 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "I read a novel once.\nWhat was the title...? Something about everyone becoming a certain letter of the alphabet, I think.",
+        "I read a novel once.\nWhat was the title...? Something about everything turning into a certain letter of the alphabet, I think.",
         "There was a story about a lonely number in it.\n...Yes, reading that inscription just reminded me.",
-        "That is all. Just a thought..."
+        "That's all. Just a thought..."
       ]
     },
     {
@@ -314,7 +314,7 @@
       "pages": [
         "Numbers in a mirror...\nApparently, some numbers keep the same property when you read their digits backward.",
         "And they become a different number from the original.\n...Perhaps this inscription wants us to find the smaller pairs among them.",
-        "Well, I do not really understand it myself.",
+        "Well, I don't really understand it myself.",
         "...Sacred, hm.",
         "'Dercas.'",
         "I was just reading it backward..."
@@ -340,9 +340,9 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "Sacred numbers, sacred stones, sacred power...\nThe inscriptions put it in different ways, but they all point to the same thing. The same person wrote them, too.",
+        "Whenever an inscription calls something 'sacred,' it means the same thing.\nThey were all written by the same person, after all.",
         "Well, people had all sorts of names for it long ago.",
-        "The blue inscription is not here.\nTry somewhere with a little more fresh air."
+        "The blue inscription isn't here.\nTry somewhere with a little more fresh air."
       ]
     },
     {
@@ -481,8 +481,8 @@
       "pages": [
         "You would think a great sage knows everything, wouldn't you?",
         "But even the finest mind can be mistaken.",
-        "Sometimes it is precisely because someone is so great\nthat a small mistake is remembered for generations.",
-        "...Come to think of it, that inscription told of a sage like that.\nThat is all. Just a thought."
+        "Sometimes it's precisely because someone is so great\nthat a small mistake is remembered for generations.",
+        "...Come to think of it, that inscription told of a sage like that.\nThat's all. Just a thought."
       ]
     },
     {
@@ -527,8 +527,8 @@
       "effect": "none",
       "pages": [
         "You did well to find this place.",
-        "I mean, it is not fair. This one is not red.\nIts number is black.",
-        "...Do not worry. It will not happen again.\nOh, what am I even saying...?"
+        "I mean, it isn't fair. This one isn't red.\nIts number is black.",
+        "...Don't worry. It won't happen again.\nOh, what am I even saying...?"
       ]
     },
     {
@@ -574,7 +574,7 @@
       "effect": "none",
       "pages": [
         "It seems strange to call one twin the elder brother and the other the younger.\nThey are almost the same.",
-        "But look closely, and there is a small difference. One...no, two.",
+        "But look closely, and there's a small difference. One...no, two.",
         "Well, I suppose the one born first is the elder.",
         "Come to think of it, how many pairs of twins are there?\nMore than anyone could ever count, perhaps."
       ]
@@ -668,7 +668,7 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "Apparently, that great sage also tackled a problem about crossing seven bridges exactly once each.\nAnd proved that you could not do it, no matter how you tried.",
+        "Apparently, that great sage also tackled a problem about crossing seven bridges exactly once each.\nAnd proved that you couldn't do it, no matter how you tried.",
         "...Amazing that you can even know something like that."
       ]
     },
@@ -715,7 +715,7 @@
       "effect": "none",
       "pages": [
         "Have you found the wonderful items on those four islands yet?\nYou see, their numbers are very similar to the number of the island you need to find next.",
-        "Perhaps that is not much of a hint...",
+        "Perhaps that isn't much of a hint...",
         "...What? A map?\nAre you looking for a map?"
       ],
       "choice": {
@@ -725,7 +725,7 @@
         ],
         "noPages": [
           "Then you already understand...",
-          "It even looks very much like one of those four islands.\nYou will know when you get there. ...Or perhaps not."
+          "It even looks very much like one of those four islands.\nYou'll know when you get there. ...Or perhaps not."
         ]
       }
     },
@@ -748,8 +748,8 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "Down on the ground, you cannot tell;\nup in the sky, you might see well?",
-        "I climbed a tower to try my luck;\nthe fog was thick, and I was stuck...",
+        "Down on the ground, you can't tell;\nup in the sky, you might see well?",
+        "I climbed a tower to look around,\nbut the fog was too thick to see a thing.",
         "Those slanting bridges, loved by all;\nif only we had a map at all!"
       ]
     },
@@ -796,7 +796,7 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "I have checked a hundred and thirty candidate pairs of twins, one after another, and still cannot find the fourth...\nThe first three were easy enough.",
+        "I've checked a hundred and thirty candidate pairs of twins, one after another, and still can't find the fourth...\nThe first three were easy enough.",
         "Damn it. How many more pairs do I have to check...?"
       ]
     },
@@ -822,7 +822,7 @@
         "I know a few places where five sacred ones form a cross.",
         "Though on the map, that cross is tilted forty-five degrees.",
         "An island with eight bridges. The fourth of those...",
-        "...Even I cannot see it from here."
+        "...Even I can't see it from here."
       ]
     },
     {
@@ -868,7 +868,7 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "Such a beautiful rule, but it does not look very beautiful on the map...\nIf only the first island had been 41."
+        "Such a beautiful rule, but it doesn't look very beautiful on the map...\nIf only the first island had been 41."
       ]
     },
     {
@@ -918,7 +918,7 @@
       "effect": "none",
       "pages": [
         "What is sacred power, anyway?",
-        "I have heard that no matter how hard you strike a sacred stone, it will not split.\nI suppose that is what makes it sacred."
+        "I've heard that no matter how hard you strike a sacred stone, it won't split.\nI suppose that's what makes it sacred."
       ]
     },
     {
@@ -1010,8 +1010,8 @@
       "pages": [
         "...It means the first kind, doesn't it?",
         "It says 'one measure greater,' right?\nNot two.",
-        "And it does not say to split it in half, either.",
-        "...Someone went off convinced it meant the second kind.\nIt is such a long way, too.",
+        "And it doesn't say to split it in half, either.",
+        "...Someone went off convinced it meant the second kind.\nIt's such a long way, too.",
         "I bet he is sitting on an empty island with his head in his hands by now."
       ]
     },
@@ -1037,8 +1037,8 @@
         "Once there lived a sage who discerned a law of odd and even.\nHe declared that the odd would never be outnumbered by the even.",
         "Through tens of millions of numbers, the law held firm,\nand was believed to be an eternal truth.",
         "Decades passed, and another sage proved the law false,\nthough he knew not a single number at which it failed.",
-        "In time, one such failure was found,\nbut whether it was the youngest remained unknown.",
-        "After many more years, the youngest failure at last revealed itself.",
+        "In time, one such failure was found,\nbut whether it was the smallest remained unknown.",
+        "After many more years, the smallest failure at last revealed itself.",
         "That number is only half sacred.\nIt is the product of two truly sacred numbers.",
         "Seek the greater of the two."
       ]
@@ -1109,7 +1109,7 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "There were some digits written on the floor.\nThey have weathered away now. Even then, I could not make out some of them...",
+        "There were some digits written on the floor.\nThey have weathered away now. Even then, I couldn't make out some of them...",
         "I think it was...",
         "'**615*257'"
       ]
@@ -1212,7 +1212,7 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "Goes without saying, but you cannot fit through a gate if you are wider than the opening.\nApparently, even exactly a million will not fit through the 'Million Gate.'",
+        "Goes without saying, but you can't fit through a gate if you're wider than the opening.\nApparently, even exactly a million won't fit through the 'Million Gate.'",
         "Still, getting thrown out for being too big the moment you reach a million...\nBeing a knight is no easy life."
       ]
     },
@@ -1259,13 +1259,13 @@
       "effect": "none",
       "pages": [
         "Hello. You took your time.\nI was getting tired of waiting.",
-        "...Oh?\nYou still have not remembered anything?",
+        "...Oh?\nYou still haven't remembered anything?",
         "And yet you made it all the way here.\nHa! Impressive. Just what I would expect of you.",
         "It was your colleague who prepared this back door.",
         "Still, what a troublesome, convoluted mechanism he made.\n...Well, I can think of a reason.",
         "You were always showing him up with your mathematics, weren't you?\nI suppose this is his own little revenge. Ha ha ha.",
         "Now then...what shall I do?",
-        "Yes, I think I will wait here a little longer.\nPerhaps another of our friends will arrive soon.",
+        "Yes, I think I'll wait here a little longer.\nPerhaps another of our friends will arrive soon.",
         "...Hm? Where is the exit?",
         "Right there.\nGo on, look up."
       ]
@@ -1289,7 +1289,7 @@
       "gender": "male",
       "effect": "none",
       "pages": [
-        "The first form, not the second?",
+        "The first kind, not the second kind?",
         "You could have written that properly..."
       ]
     },

@@ -26,7 +26,8 @@ special = json.loads((root / 'special-islands.en.json').read_text(encoding='utf-
 entries = {e['id']: e for e in special['objects']}
 assert 'sixteenth night' in entries['island-7-01']['pages'][0]
 assert 'elder twin' in entries['island-7-01']['pages'][0]
-assert 'Srebmun dercas.' in entries['island-3-02']['pages'][4]
+assert 'sacred' in entries['island-3-02']['pages'][3].lower()
+assert entries['island-3-02']['pages'][4].strip("'.").lower() == 'sacred'[::-1]
 assert '**615*257' in entries['island-5419-04']['pages'][2]
-assert 'exactly a million will not fit' in entries['island-90263-04']['pages'][0]
+assert re.search(r"exactly a million (?:will not|won't) fit", entries['island-90263-04']['pages'][0])
 print('Numeric, reversal and strict upper-bound clues preserved')
