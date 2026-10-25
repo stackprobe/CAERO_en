@@ -19,3 +19,14 @@ The UI prefers Segoe UI, then Arial, then Tahoma from Windows. If none is availa
 ## Deferred visual review
 
 Clipping, panel height, text size, control-screen layout, and translated page length require a later visual review. Translation accuracy takes priority over fitting text into the existing frames. Word wrapping alone does not guarantee that a page fits vertically.
+
+## Validation on 2026-10-26
+
+- Debug and Release builds succeeded. The final Release build reported NU1900 because NuGet vulnerability information could not be fetched; compilation succeeded.
+- `--dialogue-test`: English loading, long translated names/pages, invalid catalogue rejection, and word-wrap/reveal tests passed.
+- `--menu-test`: Menu transitions, controls, choices, autosaving, and continuation passed.
+- `--warp-test`: English direction confirmations and existing warp behavior passed.
+- `--special-test`: 416 placements, all rotations, unchanged base generation, authored conversations/branches, abilities, persistence, and ending checks passed. A pre-existing test-order issue was fixed: resident checks must run before the route helper clears residents from its test world.
+- `python tools/verify_translation.py`: All gameplay metadata, page counts, and branch structures match the Japanese originals; English catalogues use ASCII and consistent sacred terminology. Checks also cover the sixteenth-night clue, reversed phrase, obscured digits, and strict Million Gate bound.
+- A temporary hidden-window GPU smoke check loaded all printable ASCII glyphs, title/ending/trophy textures, and rendered the title successfully. It passed with loose assets and again with encrypted `Content.dat` produced by ContentPacker. The packer's round-trip and tamper checks passed for all seven source assets.
+- Title and ending image assets were inspected for embedded Japanese; neither requires translation. No game-layout or clipping review was performed.

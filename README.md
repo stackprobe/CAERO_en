@@ -1,205 +1,205 @@
-﻿# CAERO
+# CAERO
 
-**The Silent Archipelago — Version 1.0**
+**The Silent Archipelago - Version 1.0, English Edition**
 
-![霧の中に広がる石造りのアーチと階段](img/0004.png)
+![Stone arches and stairways in the mist](img/0004.png)
 
-霧に包まれた海の上に、石造りの島々がどこまでも続いています。
-この幻想世界を探索し、謎を解き、脱出への道を見つけてください。
+Stone islands stretch endlessly across a sea shrouded in mist.
+Explore this fantastical world, solve its riddles, and find a way to escape.
 
-CAERO は、一人称視点（FPS）で幻想世界を巡り、素数を中心とした数学の謎に挑む、ひとり用の高難度な謎解き脱出ゲームです。
-島々を歩き、出会った人の言葉に耳を傾け、気になるものを調べながら、脱出につながる手がかりを探していきます。
+CAERO is a single-player first-person puzzle escape game, built around very difficult mathematical riddles involving prime numbers. Walk among the islands, listen to the people you meet, and examine anything that catches your attention to gather clues to a way out.
 
-## プレイヤー向けガイド
+## Player guide
 
-### 探索し、謎を解き、脱出する
+### Explore, solve, and escape
 
-海に囲まれた島には、石の建物や塔、回廊が連なっています。橋を渡り、階段を上り、周囲をよく観察してみてください。
-探索に合わせて新しい島々が生成され、一度訪れた場所に戻ると、同じ風景が待っています。
+Stone buildings, towers, and corridors stand on islands surrounded by the sea. Cross bridges, climb stairs, and look closely at your surroundings.
+New islands are generated as you explore. Return to a place you have visited, and the same landscape will be waiting.
 
-人との会話や、調べたものから得られる情報を手がかりに、この世界の謎を考えていきます。
-探索で見つけたことと数学の知識をつなぎ合わせ、脱出への道を探すことが、このゲームの目的です。
+Use what you learn from conversations and objects to think about the mysteries of this world. Connect your discoveries with mathematical knowledge to find a path to escape.
 
-昼から夕暮れ、そして夜へ。移り変わる光と灯籠の明かり、昼夜に合わせた音楽が、幻想世界の空気を描きます。
-ときには足を止めて景色を眺めながら、自分のペースで謎に向き合ってください。
+Day gives way to dusk and night. Changing light, glowing lanterns, and music that follows the day and night create the atmosphere of this world.
+Take time to enjoy the view and approach the riddles at your own pace.
 
-### スクリーンショット
+### Screenshots
 
-| 霧の向こうへ続く橋 | 高い塔をつなぐ通路 |
+| A bridge stretching into the mist | Passages between high towers |
 | --- | --- |
-| ![霧に包まれた橋と、その先に見える塔](img/0002.png) | ![いくつもの高い塔と、それらの間を結ぶ細い通路](img/0006.png) |
-| **空中に浮かぶ構造物** | **灯籠が照らす夜の島** |
-| ![空中に浮かぶ石造りの構造物と、霧の中へ伸びる通路](img/0009.png) | ![灯籠の明かりに照らされた夜の石壁と島番号の標識](img/0011.png) |
+| ![A misty bridge and towers beyond it](img/0002.png) | ![High towers joined by narrow passages](img/0006.png) |
+| **Structures floating in the air** | **An island lit by lanterns at night** |
+| ![Floating stone structures and passages disappearing into the mist](img/0009.png) | ![Stone walls and an island number sign illuminated by lanterns](img/0011.png) |
 
-### 難易度と、Web検索・AIの活用について
+### Difficulty, web searches, and AI
 
-謎解きの中心は、数学の**素数に関する問題**です。
-数学に深く取り組んでいる方でも、じっくり考えてようやく解けるほどの、非常に高い難易度を意図しています。
+The puzzles focus on **problems involving prime numbers**.
+They are intended to be extremely challenging, even for people with a strong interest in mathematics.
 
-**難しすぎると感じたら、迷わずWeb検索を使ってください。必要であれば、AIにも頼ってください。**
-知らないことを調べ、考え方のヒントを求め、得られた情報を手がかりに考えを進めることも、このゲームで想定している遊び方です。
-Web検索やAIの活用は歓迎します。それらの力も借りながら、謎に挑み、脱出を目指してください。
+**If they feel too difficult, please feel free to search the web. You are welcome to ask AI for help too.**
+Looking up unfamiliar ideas, asking for hints about an approach, and using what you learn to think further are all intended ways to play. Use those resources as you wish while working toward an escape.
 
-### 動作環境
+### System requirements
 
-| 項目 | 内容 |
+| Item | Requirement |
 | --- | --- |
-| OS | Windows 10 / 11（64bit） |
-| 描画 | OpenGL 3.3 以上に対応した GPU・ドライバー |
-| 入力 | キーボードとマウス |
-| 言語 | 日本語 |
-| プレイ人数 | 1人 |
+| OS | Windows 10 / 11 (64-bit) |
+| Graphics | A GPU and driver supporting OpenGL 3.3 or later |
+| Input | Keyboard and mouse |
+| Language | English |
+| Players | 1 |
 
-配布版には .NET の実行に必要なファイルを同梱しています。.NET SDK のインストールは不要です。
-日本語の表示には、Windows の游ゴシック・メイリオ・MS ゴシックのいずれかを使用します。
+The distribution includes the files needed to run .NET; the .NET SDK is not required.
+Text uses Segoe UI, Arial, or Tahoma from Windows, with raylib's built-in font as a fallback. Japanese fonts are not required.
 
-### はじめかた
+### Getting started
 
-1. 配布 ZIP をフォルダーごと展開します。
-2. 展開した `CAERO` フォルダー内の `StartGame.bat` をダブルクリックします。
-3. タイトルで「はじめから（ゲームスタート）」を選ぶと探索が始まります。続きから遊ぶときは「コンテニュー」を選んでください。
+1. Extract the entire distribution ZIP.
+2. Double-click `StartGame.bat` in the extracted `CAERO` folder.
+3. Select **New Game** on the title screen to begin. Select **Continue** to resume a saved game.
 
-`StartGame.bat` と `bin` フォルダーは、同じフォルダーに置いたまま使用してください。`bin` 内の `CAERO.exe` からも起動できます。
+Keep `StartGame.bat` and the `bin` folder together. You can also run `bin/CAERO.exe` directly.
 
-### 基本操作
+### Basic controls
 
-| キー・入力 | 動作 |
+| Key or input | Action |
 | --- | --- |
-| W / A / S / D | 移動 |
-| マウス | 視点を動かす |
-| Shift | 高速移動 |
-| Space | ジャンプ・遊泳中の上昇 |
-| E | 話す・調べる |
-| Enter | ポーズ |
-| Esc | マウスを解放する |
-| 左クリック | 解放したマウスをゲーム操作に戻す |
-| Alt + Enter | ウィンドウ表示・全画面表示の切り替え |
+| W / A / S / D | Move |
+| Mouse | Look |
+| Shift | Move faster |
+| Space | Jump / swim upward |
+| E | Talk / examine |
+| Enter | Pause |
+| Esc | Release the mouse |
+| Left click | Resume mouse control after releasing it |
+| Alt + Enter | Toggle windowed / fullscreen mode |
 
-人や調べたいものに近づいて、その方向を向くと、操作の案内が表示されます。
-海では泳ぐこともできます。陸へ戻るときは、水面下へ続く階段を探してください。
-操作はタイトル画面やポーズメニューの「操作方法」でも確認できます。
+Move close to a person or object and look toward it to see the interaction prompt.
+You can swim in the sea. Look for stairs extending below the water to return to land.
+The **Controls** screen is available from the title and pause menus.
 
-**メッセージ表示中**は E / Space / Enter で全文表示・次のページ・決定、Esc で閉じます。
-選択肢は矢印キーまたは W / A / S / D で選びます。
+**While a message is open**, press E / Space / Enter to reveal all text, advance to the next page, or confirm. Esc closes the message. Use the arrow keys or W / A / S / D to choose an answer.
 
-**メニュー**は ↑ / ↓ または W / S で選択、Enter で決定します。マウスでも操作できます。
+**In menus**, use Up / Down or W / S to select, and Enter to confirm. Mouse input is also supported.
 
-### セーブと終了
+### Saving and quitting
 
-プレイ状況は約10秒ごとに自動保存され、ポーズ時やタイトルへ戻るとき、終了時にも保存されます。
-再開にはタイトルの「コンテニュー」を使います。セーブデータがない場合は選択できません。
+Progress is saved automatically about every ten seconds, when pausing, when returning to the title, and when quitting.
+Select **Continue** on the title screen to resume. It is unavailable without a valid save.
 
-**セーブデータは1つです。「はじめから（ゲームスタート）」を選ぶと、現在のデータが上書きされます。**
+**There is one save slot. Selecting New Game overwrites your current save.**
 
-配布版のセーブファイルは `bin/generated-view.json` です。バックアップする場合はゲームを終了してからコピーしてください。
-ゲームを別の場所へ移すときは、セーブを含むフォルダー全体を移動してください。
+The distribution stores its save in `bin/generated-view.json`. To back it up, close the game and copy the file.
+When moving the game, move the entire folder, including your save.
 
-終了するときは Enter でポーズし、「タイトルへもどる」からタイトル画面の「終了」を選びます。
+To quit through the menus, press Enter to pause, choose **Return to Title**, then choose **Quit**.
 
-## 技術的な説明
+## Technical information
 
-### 開発環境と構成
+### Development and repository layout
 
-C# / .NET 8 と Raylib-cs 7.0.2（ネイティブ raylib 5.5）で実装しています。
-描画には OpenGL / GLSL を使用し、ワールド生成、移動・当たり判定、会話、音声、保存をゲーム側で組み立てています。
+Implemented in C# / .NET 8 with Raylib-cs 7.0.2 (native raylib 5.5).
+Rendering uses OpenGL / GLSL. World generation, movement, collision, conversations, audio, and saving are implemented by the game.
 
-| パス | 内容 |
+| Path | Purpose |
 | --- | --- |
-| `src/CAERO.sln` | Visual Studio 用ソリューション |
-| `src/CAERO/` | ゲーム本体の C# ソースとプロジェクト |
-| `src/CAERO/Shaders/` | ワールド・空・ポストエフェクト用シェーダー |
-| `src/CAERO/Content/` | 画像と日本語テキストの編集用データ |
-| `src/CAERO/Music/` | 昼夜の BGM |
-| `tools/ContentPacker/` | 配布用コンテンツのパッケージ化ツール |
-| `doc/` | 配布 ZIP に含める説明書と起動用バッチ |
-| `Release.ps1` | ビルド・コンテンツのパッケージ化・ZIP 作成 |
+| `src/CAERO.sln` | Visual Studio solution |
+| `src/CAERO/` | Game source and project |
+| `src/CAERO/Shaders/` | World, sky, and post-processing shaders |
+| `src/CAERO/Content/` | Editable images and text catalogues; the runtime loads the English JSON files |
+| `src/CAERO/Music/` | Day, night, and title music |
+| `src/LOCALIZATION.md` | English terminology and clue translation notes |
+| `tools/ContentPacker/` | Distribution content packer |
+| `tools/verify_translation.py` | Compare English catalogue structure and gameplay metadata with the Japanese originals |
+| `doc/` | Instructions and launcher copied into the distribution ZIP |
+| `Release.ps1` | Build, package content, and create the ZIP |
 
-### ワールド生成とストリーミング
+### World generation and streaming
 
-ワールドは192単位四方の区画で管理します。建築や小物は共通の形状部品と配置規則から手続き的に生成し、足場や歩行経路、構造物との重なりを確認して配置します。
+The world is managed in sectors measuring 192 units on each side. Architecture and props are generated procedurally from shared geometry and placement rules, with checks for support, walking routes, and overlapping structures.
 
-島の整数座標から SHA-512 の先頭128bitを取り出し、ワールドシードと用途別の値を組み合わせた乱数の種を作ります。
-生成用の乱数には独自の xor128 を使用し、同じ生成仕様・シード・座標から同じ島を再現します。
+The first 128 bits of a SHA-512 hash of integer island coordinates, combined with the world seed and purpose-specific values, form the random seeds. Generation uses a custom xor128 generator. The same generation version, seed, and coordinates reproduce the same island.
 
-起動時は周囲5×5区画を準備します。移動中はバックグラウンドで次の区画を計算し、完成した区画を毎フレーム最大1つ描画へ追加します。
-保持する範囲は現在地の周囲、最大7×7の49区画です。遠い区画の描画モデルや当たり判定を解放し、再訪時に再生成することで、移動距離に比例して全マップをメモリへ蓄積することを避けています。
+At startup, the surrounding 5 by 5 sectors are prepared. During movement, background tasks generate additional sectors, and at most one completed sector is installed for rendering per frame. At most 49 sectors, a 7 by 7 area, are retained around the current location. Distant render models and collision data are released and regenerated on return, avoiding memory use that grows with total travel distance.
 
-島の住所は符号付き64bit整数、島内の位置はローカル座標で管理します。
-島を移るたびに描画・物理の原点を現在地へ移す Floating Origin 方式で、遠方での浮動小数点精度の低下を抑えています。
+Island addresses use signed 64-bit integers; positions within an island use local coordinates. A Floating Origin shifts the rendering and physics origin to the current island whenever the player crosses an island boundary, reducing floating-point precision loss at great distances.
 
-### 描画・音声・データ
+### Rendering, audio, and data
 
-- **描画**：手続き生成したメッシュと材質表現に、霧、昼夜の光、灯籠の明かり、水面・水中表現、ポストエフェクトを組み合わせています。
-- **音声**：足音や水音などの効果音・水中環境音は起動時に波形とノイズから合成します。BGM は同梱のオリジナル MP3 を再生し、昼夜に合わせて切り替えます。
-- **テキストと画像**：開発時は `Content/` の JSON・PNG を読み込みます。配布時は `Content.dat` にまとめ、実行時にメモリ上で読み込みます。
-- **保存**：シード、位置・視点、進行状況、生成仕様と座標形式のバージョンを JSON に保存します。ゲームのバージョン「1.0」と、セーブ内の生成仕様バージョンは別の値です。
+- **Rendering:** Procedural meshes and materials combine with fog, day and night lighting, lanterns, water and underwater effects, and post-processing.
+- **Audio:** Footsteps, water sounds, and underwater ambience are synthesized from waveforms and noise at startup. Included original MP3 music changes with day and night.
+- **Text and images:** Development builds read JSON and PNG assets from `Content/`. Distribution builds read them from `Content.dat` in memory. English dialogue and special content use `dialogue.en.json` and `special-islands.en.json`; Japanese originals remain as references.
+- **Saving:** JSON records the seed, position, view, progress, generation version, and coordinate-format version. The game's version number, 1.0, is separate from the save's generation version.
 
-### ソースからのビルドと実行
+### Build and run from source
 
-開発には **.NET 8 SDK** が必要です。初回の依存パッケージ復元には NuGet への接続が必要です。
-以下のコマンドはすべてリポジトリのルートで実行します。
+Development requires the **.NET 8 SDK**. The initial package restore needs access to NuGet.
+Run these commands from the repository root:
 
 ```powershell
 dotnet build src/CAERO.sln -c Debug
 dotnet run --project src/CAERO -c Debug
 ```
 
-Visual Studio を使う場合は、Visual Studio 2022 17.8 以上で「.NET デスクトップ開発」を用意し、`src/CAERO.sln` を開いて実行します。
+For Visual Studio, use Visual Studio 2022 17.8 or later with the **.NET desktop development** workload, and open `src/CAERO.sln`.
 
-通常のワールドシードは `1701` です。別のシードで新規プレイを始める場合は、起動時に指定します。
-コンテニューでは保存済みのシードが使われます。
+The default world seed is `1701`. To start a new game with another seed, specify it at startup. Continue uses the saved seed.
 
 ```powershell
 dotnet run --project src/CAERO -c Debug -- --seed=48291
 ```
 
-音声を初期化せずに起動する場合は `--no-audio` を指定できます。
+Use `--no-audio` to skip audio initialization.
 
-開発時のセーブ先は構成によって異なります。
+Development save locations depend on the build configuration:
 
-| ビルド構成 | 保存先 |
+| Configuration | Save location |
 | --- | --- |
 | Debug | `src/SaveData/generated-view.json` |
-| Release | 実行ファイルと同じフォルダーの `generated-view.json` |
+| Release | `generated-view.json` beside the executable |
 
-セーブデータとクリア実績（`achievements.json`）は、Debug では整形したプレーンな JSON、Release では `CAERO-SAVE:1` の識別ヘッダーと JSON を Base64 化した本文で保存します。既存環境との互換性のためファイル名は維持します。Release の形式は手軽な直接編集を抑えるための難読化であり、暗号化ではありません。どちらの構成でも両方の形式を読み込み可能で、新たに書き込む際はビルド構成に応じた形式を使用します。
+Save data and the escape achievement (`achievements.json`) use formatted plain JSON in Debug. Release writes a `CAERO-SAVE:1` header and a Base64-encoded JSON body. Filenames remain unchanged for compatibility. The Release format discourages casual direct editing; it is obfuscation, not encryption. Both configurations can read both formats and write the format appropriate to their configuration.
 
-### 配布パッケージの作成
+### Create a distribution
 
-リポジトリのルートで、次を実行します。
+Run from the repository root:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\Release.ps1
 ```
 
-Windows x64 向けの自己完結型 Release ビルドを作成し、コンテンツのパッケージ化と配布用ファイルのコピーを行って、`out/CAERO.zip` に出力します。
+This creates a self-contained Windows x64 Release build, packages the content, copies the distribution instructions and launcher, and writes `out/CAERO.zip`.
 
 ```text
 CAERO/
-├─ StartGame.bat
-├─ Readme.txt
-└─ bin/
-   ├─ CAERO.exe
-   ├─ Content.dat
-   ├─ Music/
-   ├─ Shaders/
-   └─ 実行に必要な DLL・その他のファイル
+|-- StartGame.bat
+|-- Readme.txt
+`-- bin/
+    |-- CAERO.exe
+    |-- Content.dat
+    |-- Music/
+    |-- Shaders/
+    `-- Runtime DLLs and other required files
 ```
 
-`Content.dat` はファイル名を含むコンテンツを AES-256-GCM で暗号化したパッケージです。
-これは気軽な内容閲覧を抑えるためのもので、実行ファイルやメモリの解析に対する秘匿を保証するものではありません。
-通常の `dotnet build` / `dotnet publish` ではパッケージ化しないため、配布 ZIP の作成には `Release.ps1` を使用します。
+`Content.dat` encrypts the content, including filenames, using AES-256-GCM. It discourages casual browsing but does not guarantee secrecy against executable or memory analysis.
+Ordinary `dotnet build` / `dotnet publish` commands do not package the content. Use `Release.ps1` to create the distribution ZIP.
 
-### 検証
+### Validation
 
-ゲーム本体に、生成・移動・保存・UI などの自己テストと描画確認用の起動オプションを用意しています。
+The game includes self-tests and rendering checks for generation, movement, saving, UI, and related behavior.
 
 ```powershell
-# 生成・移動・ストリーミングなどの検証
+# Generation, movement, streaming, and other regression checks
 dotnet run --project src/CAERO -c Debug -- --stream-test
 
-# 上記に加えて、実際の描画・リサイズなどを確認（OpenGL 環境が必要）
+# The above plus actual rendering and resizing; requires OpenGL
 dotnet run --project src/CAERO -c Debug -- --self-test
+
+# Focused English content and word-wrapping checks
+dotnet run --project src/CAERO -c Debug -- --dialogue-test
+
+# Compare translated catalogue structure and numerical clue markers; requires Python 3
+python tools/verify_translation.py
 ```
 
-これらは開発用の検証コマンドです。通常のプレイには必要ありません。
+These commands are development checks; players do not need to run them.
+English text clipping and layout at different resolutions are reserved for a later visual review. The translation is not shortened to fit the current panels.

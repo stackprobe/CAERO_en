@@ -1,143 +1,148 @@
 CAERO
 The Silent Archipelago
 
-作者：stackprobe (cerulean.charlotte)
+Created by stackprobe (cerulean.charlotte)
 
 
-■ このゲームについて
+ABOUT THE GAME
 
-霧に包まれた海の上に、石造りの島々がどこまでも続いています。
-塔を登り、回廊を渡り、ときには足を止めて、遠くの景色を眺めてみてください。
+Stone islands stretch endlessly across a sea shrouded in mist.
+Climb towers, cross corridors, and sometimes stop to take in the distant view.
 
-CAERO は、一人称視点で幻想世界を探索する、ひとり用の謎解き脱出ゲームです。
-気になる場所へ向かい、出会った人の言葉に耳を傾けながら、
-手がかりを集め、謎を解いて、この世界からの脱出を目指してください。
-
-
-■ 謎解きの難易度について
-
-このゲームの謎解きは、非常に難しいものを意図しています。
-ある分野に関する高度な知識と、じっくり考え抜く思考が求められます。
-
-難しすぎると感じたら、迷わず Web 検索を使ってください。
-必要であれば、AI に頼ることも歓迎します。
-知らないことを調べ、考え方のヒントを得ながら謎に挑むことも、
-このゲームで想定している遊び方です。
-外部の助けも活用しながら、自分のペースで脱出を目指してください。
+CAERO is a single-player puzzle escape game in which you explore a fantastical
+world from a first-person perspective. Follow your curiosity, listen to the
+people you meet, gather clues, and solve the riddles to find a way out.
 
 
-■ ストーリーについて、ちょっと補足
+PUZZLE DIFFICULTY
 
-何かありそうなセリフも出てきますが、実はストーリーはまだちゃんと完成していません！
-「この話、どうつながるの？」と思うところもあるかもしれません。
-構想はあるので、今後のバージョンで少しずつ形にしていきたいと思っています。
-今は、そんな物語の気配も含めて、この世界を楽しんでもらえたらうれしいです。
+The puzzles in this game are intended to be very difficult.
+They require advanced knowledge of a particular subject and careful thought.
 
-
-■ 動作環境
-
-  OS             Windows 10 / 11（64bit）
-  描画           OpenGL 3.3 以上に対応した GPU とドライバー
-  入力           キーボードとマウス
-  言語・人数     日本語・1人用
-
-配布版には .NET の実行に必要なファイルを同梱しています。
-.NET SDK や .NET ランタイムを別途インストールする必要はありません。
-日本語の表示には、Windows の游ゴシック・メイリオ・MS ゴシックの
-いずれかを使用します。
+If you find them too difficult, please feel free to search the web.
+You are also welcome to ask AI for help when you need it.
+Looking up unfamiliar ideas and seeking hints about how to approach a puzzle
+are both intended ways to play. Use outside help as you wish, and work toward
+an escape at your own pace.
 
 
-■ インストール・起動方法
+A NOTE ABOUT THE STORY
 
-1. ZIP ファイルを、書き込み可能なローカルディスク上のフォルダに展開してください。
-2. この Readme.txt と同じ場所にある StartGame.bat をダブルクリックしてください。
-3. タイトル画面の「はじめから（ゲームスタート）」を選ぶと始まります。
-   保存済みのプレイを再開する場合は「コンテニュー」を選んでください。
-
-StartGame.bat と bin フォルダは、同じフォルダに置いたまま使用してください。
-ZIP ファイルの中から直接起動せず、必ずすべて展開してから起動してください。
-bin フォルダ内の CAERO.exe からも起動できます。
+Some of the dialogue hints at a larger story, but the story is not actually
+finished yet! There may be moments when you wonder how the pieces fit together.
+There is a plan, and I hope to develop it gradually in future versions.
+For now, I hope you enjoy this world, including those glimpses of a story.
 
 
-■ 基本操作
+SYSTEM REQUIREMENTS
 
-【探索中】
-  W / A / S / D   移動
-  マウス         視点
-  Shift          高速移動
-  Space          ジャンプ・遊泳上昇
-  E              話す・調べる
-  Enter          ポーズ
-  Esc            マウス解放（デスクトップや他のアプリを操作したいときに）
-  Alt + Enter    全画面切替
+  OS                Windows 10 / 11 (64-bit)
+  Graphics          A GPU and driver supporting OpenGL 3.3 or later
+  Input             Keyboard and mouse
+  Language          English
+  Players           1
 
-話したり調べたりするときは、対象に近づいて、その方を向いてください。
-マウスを解放した後は、ゲーム画面をクリックすると操作に戻れます。
-
-【メッセージ表示中】
-  E / Space / Enter     全文表示・次のページ・決定
-  矢印キー / W A S D    選択肢の選択
-  Esc                   メッセージを閉じる
-
-【メニュー】
-  ↑ / ↓ または W / S    項目の選択
-  Enter                 決定
-
-メニューはマウスでも操作できます。
-ゲーム内の「操作方法」からも、操作を確認できます。
+The distribution includes the files needed to run .NET.
+You do not need to install the .NET SDK or runtime separately.
+Text uses Segoe UI, Arial, or Tahoma from Windows, with raylib's built-in font
+as a fallback. Japanese fonts are not required.
 
 
-■ セーブと終了
+INSTALLATION AND STARTUP
 
-プレイ状況は自動的に保存されます。手動でセーブする必要はありません。
-セーブデータは1つです。「はじめから（ゲームスタート）」を選ぶと、
-現在のセーブデータは新しいプレイで上書きされます。
+1. Extract the ZIP to a writable folder on a local disk.
+2. Double-click StartGame.bat beside this Readme.txt.
+3. Select "New Game" on the title screen to begin.
+   Select "Continue" to resume a saved game.
 
-ゲームを終了するときは、ウィンドウ右上の［×］ボタンを押してください。
-この方法でも、終了時にプレイ状況が自動保存されます。
-Enter でポーズし、「タイトルへもどる」からタイトル画面の「終了」を選んでも終了できます。
-
-
-■ アンインストール方法
-
-ゲームを終了してから、展開したゲームのフォルダごと削除してください。
-レジストリへの設定登録は行っていません。
-セーブデータとクリア実績も削除されるため、残したい場合は先にバックアップしてください。
+Keep StartGame.bat and the bin folder together in the same folder.
+Extract all files before starting; do not run the game from inside the ZIP.
+You can also launch CAERO.exe in the bin folder directly.
 
 
-■ 制作について
+BASIC CONTROLS
 
-このゲームのプログラム・3Dオブジェクト・画像・音楽は、すべて Codex で作成しています。
+[While exploring]
+  W / A / S / D     Move
+  Mouse             Look
+  Shift             Move faster
+  Space             Jump / swim upward
+  E                 Talk / examine
+  Enter             Pause
+  Esc               Release the mouse to use the desktop or other applications
+  Alt + Enter       Toggle fullscreen
+
+To talk to someone or examine something, move close and look toward it.
+After releasing the mouse, click inside the game to resume mouse control.
+
+[While a message is open]
+  E / Space / Enter     Show all text / next page / confirm
+  Arrow keys / W A S D  Select an answer
+  Esc                   Close the message
+
+[Menus]
+  Up / Down or W / S    Select an entry
+  Enter                 Confirm
+
+You can also use the mouse in menus.
+The in-game "Controls" screen lists the controls too.
 
 
-■ 使用ライブラリ・クレジット
+SAVING AND QUITTING
 
-このゲームは、描画・入力・音声などに raylib を使用しています。
-C# からの利用には Raylib-cs を使用しています。
-起動時に表示する raylib ロゴは、raylib 公式のものです。
+Your progress is saved automatically. You do not need to save manually.
+There is one save slot. Selecting "New Game" overwrites your current save.
 
-【raylib】
-  作者：Ramon Santamaria (@raysan5)
-  公式サイト：https://www.raylib.com/
-  ライセンス：zlib/libpng
-  著作権表示とライセンス全文は、同梱の raylib-LICENSE.txt をご確認ください。
+To quit, click the X button in the upper-right corner of the window.
+Your progress is saved when you exit this way too.
+You can also press Enter to pause, select "Return to Title", then choose "Quit".
 
-【Raylib-cs 7.0.2】
+Save data is stored in bin/generated-view.json, and the escape achievement is
+stored separately in bin/achievements.json. To make a backup, close the game
+first and copy these files. When moving the game, move the whole folder.
+
+
+UNINSTALLING
+
+Close the game, then delete the entire folder you extracted.
+The game does not register settings in the Windows registry.
+This also deletes your save and escape achievement, so back them up first
+if you want to keep them.
+
+
+CREATION
+
+The game's code, 3D objects, images, and music were all created using Codex.
+
+
+LIBRARIES AND CREDITS
+
+This game uses raylib for graphics, input, audio, and related functionality.
+Raylib-cs provides the C# bindings.
+The raylib logo shown at startup is the official raylib logo.
+
+[raylib]
+  Created by Ramon Santamaria (@raysan5)
+  Official website: https://www.raylib.com/
+  License: zlib/libpng
+  See the included raylib-LICENSE.txt for the copyright notice and full license.
+
+[Raylib-cs 7.0.2]
   Copyright (C) 2018-2025 raylib-cs
-  配布元：https://github.com/raylib-cs/raylib-cs
-  ライセンス：zlib
-  ライセンス全文：
+  Project: https://github.com/raylib-cs/raylib-cs
+  License: zlib
+  Full license:
   https://github.com/raylib-cs/raylib-cs/blob/v7.0.2/LICENSE
 
 
-■ 著作権について
+COPYRIGHT
 
-本ゲームに含まれるプログラム・文章・画像・音楽などの権利は、各権利者に帰属します。
-使用ライブラリ・ロゴなど、第三者の著作物の権利は、それぞれの権利者に帰属します。
-第三者の著作物の利用条件については、それぞれのライセンスに従ってください。
+Rights to the code, text, images, music, and other material in this game
+belong to their respective rights holders.
+Rights to third-party works, including libraries and logos, belong to their
+respective rights holders. Follow the applicable licenses when using them.
 
 
-■ 連絡先
+CONTACT
 
 stackprobes@gmail.com
-
