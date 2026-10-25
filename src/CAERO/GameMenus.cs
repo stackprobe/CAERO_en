@@ -57,7 +57,6 @@ internal sealed class GameMenus : IDisposable
     public void Dispose() { Raylib.UnloadTexture(trophy); Raylib.UnloadTexture(title); }
     private const string SaveLossWarning = "Your current save data will be lost.";
     internal const string ClearAchievementText = "Achievement: Escaped";
-    internal const string Characters = "" + SaveLossWarning;
     internal static string FlightDescription(bool canFly) => canFly ? "After obtaining the flight potion: start flying while jumping / stop flying" : "???";
     private static readonly Color Ink = new(232, 234, 222, 255), Muted = new(139, 158, 162, 255);
     private static string[] Entries(GameScreen screen) => screen == GameScreen.Title

@@ -1,5 +1,4 @@
 using System.Numerics;
-using System.Buffers.Binary;
 using Raylib_cs;
 
 namespace Caero;
@@ -7,59 +6,23 @@ namespace Caero;
 internal sealed class ConversationUi : IDisposable
 {
     private readonly Font font;
+    private readonly bool ownsFont;
     private readonly Texture2D endingImage;
     public ConversationUi()
     {
         string fonts = Environment.GetFolderPath(Environment.SpecialFolder.Fonts);
-        string? path = new[] { "YuGothR.ttc", "meiryo.ttc", "msgothic.ttc" }.Select(f => Path.Combine(fonts, f)).FirstOrDefault(File.Exists);
-        if (path == null) throw new FileNotFoundException("A Japanese Windows font (Yu Gothic / Meiryo / MS Gothic) is required for dialogue.");
+        string? path = new[] { "segoeui.ttf", "arial.ttf", "tahoma.ttf" }
+            .Select(f => Path.Combine(fonts, f)).FirstOrDefault(File.Exists);
         int[] glyphs = Enumerable.Range(32, 95).Concat(Dialogue.FontCharacters.Select(c => (int)c))
-            .Concat(SpecialContent.FontCharacters.Select(c => (int)c))
-            .Concat(GameMenus.Characters.Select(c => (int)c))
-            .Concat(GameMenus.ClearAchievementText.Select(c => (int)c))
-            .Concat((EndingSequence.Message + "Return to Title").Select(c => (int)c))
-            .Concat(WarpTravel.UiCharacters.Select(c => (int)c)).Distinct().Order().ToArray();
-        font = Raylib.LoadFontFromMemory(".ttf", FontFace(File.ReadAllBytes(path)), 40, glyphs, glyphs.Length);
-        if (font.Texture.Id == 0 || font.Texture.Id == Raylib.GetFontDefault().Texture.Id || font.GlyphCount < glyphs.Length)
-            throw new InvalidOperationException("Cannot load Japanese dialogue font: " + path);
-        Raylib.SetTextureFilter(font.Texture, TextureFilter.Bilinear);
+            .Concat(SpecialContent.FontCharacters.Select(c => (int)c)).Distinct().Order().ToArray();
+        font = path == null ? Raylib.GetFontDefault()
+            : Raylib.LoadFontFromMemory(".ttf", File.ReadAllBytes(path), 40, glyphs, glyphs.Length);
+        ownsFont = font.Texture.Id != 0 && font.Texture.Id != Raylib.GetFontDefault().Texture.Id;
+        if (font.Texture.Id == 0) font = Raylib.GetFontDefault();
+        if (ownsFont) Raylib.SetTextureFilter(font.Texture, TextureFilter.Bilinear);
         endingImage = ContentAssets.LoadTexture("ending.png");
         if (!Raylib.IsTextureValid(endingImage)) throw new InvalidDataException("Cannot load CAERO ending image.");
         Raylib.SetTextureFilter(endingImage, TextureFilter.Bilinear);
-    }
-    // raylib's stb loader expects a standalone sfnt at offset zero. Windows
-    // supplies Japanese fonts as TTC collections, whose table offsets are global.
-    // Repack the first face in memory; no Windows font is copied into the project.
-    internal static byte[] FontFace(byte[] source)
-    {
-        int U16(int p) => BinaryPrimitives.ReadUInt16BigEndian(source.AsSpan(p, 2));
-        int U32(int p) => checked((int)BinaryPrimitives.ReadUInt32BigEndian(source.AsSpan(p, 4)));
-        if (!source.AsSpan(0, 4).SequenceEqual("ttcf"u8)) return source;
-        int offset = U32(12), count = U16(offset + 4), header = 12 + count * 16;
-        using var stream = new MemoryStream();
-        stream.Write(source, offset, header);
-        Span<byte> value = stackalloc byte[4];
-        for (int i = 0; i < count; i++)
-        {
-            int record = offset + 12 + i * 16, start = U32(record + 8), length = U32(record + 12);
-            int destination = checked((int)stream.Length);
-            stream.Position = 12 + i * 16 + 8;
-            BinaryPrimitives.WriteUInt32BigEndian(value, (uint)destination); stream.Write(value);
-            stream.Position = destination; stream.Write(source, start, length);
-            while (stream.Length % 4 != 0) stream.WriteByte(0);
-        }
-        byte[] result = stream.ToArray();
-        int head = -1;
-        for (int i = 0; i < count; i++)
-            if (result.AsSpan(12 + i * 16, 4).SequenceEqual("head"u8))
-                head = (int)BinaryPrimitives.ReadUInt32BigEndian(result.AsSpan(12 + i * 16 + 8, 4));
-        if (head >= 0)
-        {
-            result.AsSpan(head + 8, 4).Clear(); uint sum = 0;
-            for (int i = 0; i < result.Length; i += 4) sum = unchecked(sum + BinaryPrimitives.ReadUInt32BigEndian(result.AsSpan(i, 4)));
-            BinaryPrimitives.WriteUInt32BigEndian(result.AsSpan(head + 8, 4), unchecked(0xb1b0afba - sum));
-        }
-        return result;
     }
     private void Text(string text, float x, float y, float size, Color color) => Raylib.DrawTextEx(font, text, new(x, y), size, 1, color);
     internal void Label(string text, float x, float y, float size, Color color) => Text(text, x, y, size, color);
@@ -106,7 +69,7 @@ internal sealed class ConversationUi : IDisposable
         Text($"{session.Page + 1} / {session.PageCount}    {controls}    [Esc] Close",
             padding + 24, top + panelHeight - 35, sizeText * .7f, muted);
     }
-    public void Dispose() { Raylib.UnloadFont(font); Raylib.UnloadTexture(endingImage); }
+    public void Dispose() { if (ownsFont) Raylib.UnloadFont(font); Raylib.UnloadTexture(endingImage); }
     internal void DrawSpecial(SpecialObject? target)
     {
         if (target == null) return;

@@ -26,8 +26,7 @@ internal static class Dialogue
     // The CLR initializes this once, safely shared by island workers and the UI.
     public static readonly Speech[] Lines = Load(FilePath);
     public static readonly string FontCharacters = string.Concat(Lines.Select(s => s.Name + string.Concat(s.Pages)
-        + (s.Choice is { } choice ? string.Concat(choice.AllPages) : "")))
-        + "";
+        + (s.Choice is { } choice ? string.Concat(choice.AllPages) : "")));
 
     internal static Speech[] Load(string path)
     {

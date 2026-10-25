@@ -88,7 +88,6 @@ internal sealed record WarpTarget(Sector Sector, WarpTerminal Terminal)
 internal static class WarpTravel
 {
     internal const float ArrivalDrop = 1.1f;
-    internal const string UiCharacters = "";
     internal static bool Examine(World world, Explorer player, WarpTarget target, Conversation conversation, Action? beforeTravel = null)
     {
         if (player.Flying) return false;

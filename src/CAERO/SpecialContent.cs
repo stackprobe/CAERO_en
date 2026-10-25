@@ -52,8 +52,7 @@ internal static class SpecialContent
     internal static IEnumerable<SpecialDefinition> ForIsland(BigInteger number)
         => Islands.TryGetValue(number, out var entries) ? entries : [];
     internal static string FontCharacters => string.Concat(Data.Objects.Select(d => d.Name + string.Concat(d.Pages)
-        + (d.Choice is { } choice ? string.Concat(choice.AllPages) : "")))
-        + "";
+        + (d.Choice is { } choice ? string.Concat(choice.AllPages) : "")));
 
     internal static SpecialCatalogue Load(string path)
     {
