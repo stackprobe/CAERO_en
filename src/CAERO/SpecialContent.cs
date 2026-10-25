@@ -44,7 +44,7 @@ internal sealed record SpecialCatalogue
 
 internal static class SpecialContent
 {
-    internal static string FilePath => Path.Combine(AppContext.BaseDirectory, "Content", "special-islands.ja.json");
+    internal static string FilePath => Path.Combine(AppContext.BaseDirectory, "Content", "special-islands.en.json");
     internal static readonly SpecialCatalogue Data = Load(FilePath);
     private static readonly Dictionary<BigInteger, SpecialDefinition[]> Islands = Data.Objects
         .GroupBy(d => BigInteger.Parse(d.Island, CultureInfo.InvariantCulture)).ToDictionary(g => g.Key, g => g.ToArray());
@@ -75,7 +75,7 @@ internal static class SpecialContent
                     || !Enum.IsDefined(d.Kind) || !Enum.IsDefined(d.Surface) || !Enum.IsDefined(d.Pose) || !Enum.IsDefined(d.Age)
                     || (d.Surface == SpecialSurface.TowerLanding ? d.Landing is < 1 or > 5 : d.Landing != 0)
                     || !Enum.IsDefined(d.Effect) || d.Gender is not ("male" or "female")
-                    || string.IsNullOrWhiteSpace(d.Name) || d.Name.Length > 24 || !DialogueChoice.ValidPages(d.Pages)
+                    || string.IsNullOrWhiteSpace(d.Name) || d.Name.Length > Dialogue.MaxNameLength || !DialogueChoice.ValidPages(d.Pages)
                     || (d.Choice != null && (!d.Choice.IsValid
                         || d.Pages.Concat(d.Choice.AllPages).Sum(p => (long)p.Length) > 20000))
                     || d.Position is not { Length: 3 } || d.Position.Any(v => !float.IsFinite(v))

@@ -46,6 +46,17 @@ internal static class DialogueChecks
             Reject(root => root["conversations"]![7]!.AsObject().Remove("pose"), "missing required metadata rejected");
             Reject(root => root["conversations"]![7]!["pages"] = root["conversations"]![0]!["pages"]!.DeepClone(), "duplicate text rejected");
             Reject(root => root["version"] = 99, "unsupported schema rejected");
+            Reject(root => root["language"] = "ja", "a non-English catalogue is rejected");
+            Reject(root => root["conversations"]![7]!["name"] = new string('a', Dialogue.MaxNameLength + 1), "oversized name rejected");
+            Reject(root => root["conversations"]![7]!["pages"]![0] = new string('a', 20001), "page safety budget retained");
+            Reject(root => root["conversations"]![7]!["pages"]![0] = "bad\ttext", "control characters rejected");
+            var longTranslation = JsonNode.Parse(source)!;
+            longTranslation["conversations"]![7]!["name"] = "Woman resting her hands on her knees";
+            longTranslation["conversations"]![7]!["pages"]![0] = new string('a', 400) + "\nThe translation continues.";
+            File.WriteAllText(fixture, longTranslation.ToJsonString());
+            var loadedTranslation = Dialogue.Load(fixture)[7];
+            Check(loadedTranslation.Name.Length > 24 && loadedTranslation.Pages[0].Length > 180,
+                "English names and pages load without truncation or shortening");
             File.WriteAllText(fixture, "{");
             bool malformed = false;
             try { Dialogue.Load(fixture); } catch (JsonException) { malformed = true; }

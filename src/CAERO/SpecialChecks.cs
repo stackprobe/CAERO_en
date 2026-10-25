@@ -206,8 +206,6 @@ internal static class SpecialChecks
             using var world = new World(upload: false, originX: x, originZ: z);
             var sector = world.Sectors.Single(s => s.X == x && s.Z == z);
             var route = sector.Routes.Single(r => r.Name == "tower switchbacks").Points.Select(world.AddressOf).ToArray();
-            ProceduralChecks.Walk(world, $"{number} tower ascent past the special content", route);
-            ProceduralChecks.Walk(world, $"{number} tower descent past the special content", route.Reverse().ToArray());
             if (number == 3)
             {
                 var person = sector.People.Single(p => p.SpecialId == "island-3-03");
@@ -226,6 +224,10 @@ internal static class SpecialChecks
                     ProceduralChecks.Walk(world, $"3 {entrance.Name} exit", approach.Reverse().ToArray());
                 }
             }
+            // Walk clears residents to isolate route collision. Inspect and target
+            // the authored resident first, while it is still present in the fixture.
+            ProceduralChecks.Walk(world, $"{number} tower ascent past the special content", route);
+            ProceduralChecks.Walk(world, $"{number} tower descent past the special content", route.Reverse().ToArray());
         }
         Console.WriteLine("SPECIAL LANDINGS: islands 3/90263 tower ascent/descent and island 3 entrances passed without jumping or flight.");
     }
@@ -398,7 +400,7 @@ internal static class SpecialChecks
                 else if (prop.Definition.Kind == SpecialKind.Exit)
                 {
                     Check(!world.Progress.Escaped && session.AwaitingChoice
-                        && session.Text == "碑石は輝いている。\n触れてみますか？", "exit asks before triggering the ending");
+                        && session.Text == "The stone is shining.\nWill you touch it?", "exit asks before triggering the ending");
                     session.SelectAnswer(false); session.Advance();
                     Check(!world.Progress.Escaped && !session.Active, "No leaves the adventure playable");
                     SpecialInteraction.Examine(world, player, prop, session);

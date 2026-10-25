@@ -12,7 +12,9 @@
 - For the stone dice clue, "one measure greater along each edge" preserves the first-kind construction and its contrast with "two" in the resident's hint. The removal is an equal **volume**, not an equal edge length. Do not name Cuban primes directly when the original does not.
 - Knights of Prayer and Knights of Succession retain the two distinct families in the final puzzle. The Million Gate is strictly below one million; joining their powers means addition, as the resident explains.
 
-The English catalogues are `CAERO/Content/dialogue.en.json` and `CAERO/Content/special-islands.en.json`. Japanese originals remain as translation references. English catalogue loading is switched separately from the translation commit.
+The runtime loads `CAERO/Content/dialogue.en.json` and `CAERO/Content/special-islands.en.json`, including when reading `Content.dat`. Japanese originals remain as translation references. The dialogue language must be `en`. Names allow up to 128 characters; authored page groups retain a 20,000-character safety budget instead of the original 180-character limit per regular dialogue page. This is a data validation limit, not a promise that the text fits on screen.
+
+The UI prefers Segoe UI, then Arial, then Tahoma from Windows. If none is available, it uses raylib's built-in font. No Japanese Windows font is required. Current English text uses printable ASCII and explicit newlines.
 
 ## Deferred visual review
 
