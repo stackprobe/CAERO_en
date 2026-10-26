@@ -55,7 +55,7 @@ internal sealed class ConversationUi : IDisposable
         foreach (var glyph in layout)
         {
             if (glyph.Index >= session.Revealed) break;
-            Text(session.Text[glyph.Index].ToString(), padding + 24 + glyph.X,
+            Text(glyph.Character.ToString(), padding + 24 + glyph.X,
                 top + 58 + glyph.Row * lineHeight, sizeText, ink);
         }
         if (session.AwaitingChoice)

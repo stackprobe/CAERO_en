@@ -18,7 +18,11 @@ The UI prefers Segoe UI, then Arial, then Tahoma from Windows. If none is availa
 
 ## Deferred visual review
 
-Clipping, panel height, text size, control-screen layout, and translated page length require a later visual review. Translation accuracy takes priority over fitting text into the existing frames. Word wrapping alone does not guarantee that a page fits vertically.
+Dialogue uses authored newlines only. Each line's glyph advances (including character spacing) are accumulated using the drawing font. If a line exceeds the available width, its displayed prefix is shortened to leave room for `... [clipped]`; the hidden remainder is not wrapped onto another row. The source text is unchanged. Layout is computed from the full page, so typewriter reveal does not move the cut position; the marker appears when the first clipped character would be revealed. Extremely narrow areas show only as much of the marker as fits.
+
+Panel height, text size, control-screen layout, and translated page length still require a later visual review. Translation accuracy takes priority over fitting text into the existing frames. Horizontal clipping does not guarantee that all explicitly authored lines fit vertically.
+
+The line-clipping change passed `--dialogue-test`, including proportional widths, exact fits, marker width, narrow areas, authored blank lines, following-line positions, and typewriter timing. A temporary hidden-window GPU check at 1440x900 and 640x360 confirmed glyph bounds, full markers, and three preserved authored rows; the 640x360 result was visually inspected. The Debug build succeeded with the existing NU1900 warning about unavailable NuGet vulnerability data. Existing uncommitted text edits were left unchanged.
 
 ## Validation on 2026-10-26
 

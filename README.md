@@ -194,7 +194,7 @@ dotnet run --project src/CAERO -c Debug -- --stream-test
 # The above plus actual rendering and resizing; requires OpenGL
 dotnet run --project src/CAERO -c Debug -- --self-test
 
-# Focused English content and word-wrapping checks
+# Focused English content and line-clipping checks
 dotnet run --project src/CAERO -c Debug -- --dialogue-test
 
 # Compare translated catalogue structure and numerical clue markers; requires Python 3
