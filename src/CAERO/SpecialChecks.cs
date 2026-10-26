@@ -297,7 +297,7 @@ internal static class SpecialChecks
                     conversation.Update(100);
                     if (next != null && page == expected.Length - 1)
                         Check(conversation.AwaitingChoice, "next choice follows the selected branch's final page");
-                    else Press(confirm);
+                    else { conversation.Update(Conversation.InputDelay); Press(confirm); }
                 }
                 current = next!;
             }
@@ -306,7 +306,7 @@ internal static class SpecialChecks
         conversation.Start(person);
         for (int page = 0; page < person.Speech.Pages.Length - 1; page++)
         { conversation.Update(100); conversation.Advance(); }
-        conversation.Update(100); Press(KeyboardKey.Right); Press(KeyboardKey.Escape);
+        conversation.Update(100); conversation.Update(Conversation.InputDelay); Press(KeyboardKey.Right); Press(KeyboardKey.Escape);
         Check(!conversation.AwaitingChoice && !person.Talking, "cancel clears the pending choice");
         conversation.Start(person);
         Check(conversation.SelectedYes && conversation.Page == 0, "reopening resets the selected answer and page");
@@ -319,7 +319,7 @@ internal static class SpecialChecks
             conversation.Update(100); conversation.Update(Conversation.ChoiceInputDelay); Press(KeyboardKey.Right); Press(KeyboardKey.Enter);
             for (int page = 0; page < choice.NoPages.Length - 1; page++)
             { conversation.Update(100); conversation.Advance(); }
-            conversation.Update(100); Press(KeyboardKey.Right); Press(KeyboardKey.Escape);
+            conversation.Update(100); conversation.Update(Conversation.InputDelay); Press(KeyboardKey.Right); Press(KeyboardKey.Escape);
             Check(!conversation.Active && !person.Talking, "Escape closes a nested question and releases the speaker");
             conversation.Start(person);
             Check(conversation.Page == 0 && conversation.SelectedYes, "reopening after nested cancellation restarts from the beginning");
