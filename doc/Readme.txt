@@ -16,22 +16,18 @@ people you meet, gather clues, and solve the riddles to find a way out.
 
 PUZZLE DIFFICULTY
 
-The puzzles in this game are intended to be very difficult.
-They require advanced knowledge of a particular subject and careful thought.
+The puzzles in this game are intentionally very difficult.
+They may require advanced knowledge and research into unfamiliar subjects.
 
-If you find them too difficult, please feel free to search the web.
-You are also welcome to ask AI for help when you need it.
-Looking up unfamiliar ideas and seeking hints about how to approach a puzzle
-are both intended ways to play. Use outside help as you wish, and work toward
-an escape at your own pace.
+Searching the web or asking AI for hints is a perfectly valid way to play.
+How much outside help you use is entirely up to you.
 
 
 A NOTE ABOUT THE STORY
 
-Some of the dialogue hints at a larger story, but the story is not actually
-finished yet! There may be moments when you wonder how the pieces fit together.
-There is a plan, and I hope to develop it gradually in future versions.
-For now, I hope you enjoy this world, including those glimpses of a story.
+The larger story is still being developed.
+Some mysteries may remain unresolved in this version.
+I hope to explore them further in future updates.
 
 
 SYSTEM REQUIREMENTS
@@ -44,8 +40,7 @@ SYSTEM REQUIREMENTS
 
 The distribution includes the files needed to run .NET.
 You do not need to install the .NET SDK or runtime separately.
-Text uses Segoe UI, Arial, or Tahoma from Windows, with raylib's built-in font
-as a fallback. Japanese fonts are not required.
+No additional fonts are required.
 
 
 INSTALLATION AND STARTUP
@@ -93,9 +88,8 @@ SAVING AND QUITTING
 Your progress is saved automatically. You do not need to save manually.
 There is one save slot. Selecting "New Game" overwrites your current save.
 
-To quit, click the X button in the upper-right corner of the window.
-Your progress is saved when you exit this way too.
-You can also press Enter to pause, select "Return to Title", then choose "Quit".
+To quit, press Enter to pause, select "Return to Title", then choose "Quit".
+In windowed mode, you can also close the game using the X button.
 
 Save data is stored in bin/generated-view.json, and the escape achievement is
 stored separately in bin/achievements.json. To make a backup, close the game
@@ -112,7 +106,8 @@ if you want to keep them.
 
 CREATION
 
-The game's code, 3D objects, images, and music were all created using Codex.
+Developed by stackprobe with the assistance of Codex.
+Codex was used extensively in creating the game's code and assets.
 
 
 LIBRARIES AND CREDITS
@@ -146,3 +141,4 @@ respective rights holders. Follow the applicable licenses when using them.
 CONTACT
 
 stackprobes@gmail.com
+
