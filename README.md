@@ -7,7 +7,7 @@
 Stone islands stretch endlessly across a sea shrouded in mist.
 Explore this fantastical world, solve its riddles, and find a way to escape.
 
-CAERO is a single-player first-person puzzle escape game, built around very difficult mathematical riddles involving prime numbers. Walk among the islands, listen to the people you meet, and examine anything that catches your attention to gather clues to a way out.
+CAERO is a single-player first-person puzzle escape game, built around very difficult mathematical riddles. Walk among the islands, listen to the people you meet, and examine anything that catches your attention to gather clues to a way out.
 
 ## Player guide
 
@@ -31,7 +31,7 @@ Take time to enjoy the view and approach the riddles at your own pace.
 
 ### Difficulty, web searches, and AI
 
-The puzzles focus on **problems involving prime numbers**.
+The puzzles focus on **mathematical problems**.
 They are intended to be extremely challenging, even for people with a strong interest in mathematics.
 
 **If they feel too difficult, please feel free to search the web. You are welcome to ask AI for help too.**
@@ -106,7 +106,7 @@ Rendering uses OpenGL / GLSL. World generation, movement, collision, conversatio
 | `src/CAERO/Shaders/` | World, sky, and post-processing shaders |
 | `src/CAERO/Content/` | Editable images and text catalogues; the runtime loads the English JSON files |
 | `src/CAERO/Music/` | Day, night, and title music |
-| `src/LOCALIZATION.md` | English terminology and clue translation notes |
+| `src/LOCALIZATION.md` | English terminology and clue translation notes (for developers; contains spoilers) |
 | `tools/ContentPacker/` | Distribution content packer |
 | `tools/verify_translation.py` | Compare English catalogue structure and gameplay metadata with the Japanese originals |
 | `doc/` | Instructions and launcher copied into the distribution ZIP |
